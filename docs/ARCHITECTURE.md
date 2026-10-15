@@ -30,11 +30,12 @@
 |---|---|
 | `faceframe/core` | GUI-free: frame contract, queues, geometry, detector, tracking + smoothing, panel validation, temporal fusion, renderer, SR engine, pipeline, metrics |
 | `faceframe/capture` | `direct.py` (Twitch stream), `wgc.py` (window capture), `bridge.py` + `yuv.py` (extension), `audio.py`, `windows.py` |
+| `faceframe/updater.py` | in-app updates from GitHub Releases (check, download + SHA-256, silent install, relaunch) |
 | `faceframe/ui` | `app.py` control window, `theme.py` design system, `image_view.py`, `output_window.py`, `source_picker.py` |
 | `extension/` | Edge MV3 extension (activeTab, scripting, storage; loopback only) |
 | `installer/` | Inno Setup script, bootstrap, launcher, artwork, pinned requirements |
 | `tools/` | validation and QA scripts (live QA, quality evaluation, scenario runners, probes) |
-| `tests/` | 98 automated tests (contracts, geometry, tracking, protocol, UI wiring) |
+| `tests/` | 105 automated tests (contracts, geometry, tracking, protocol, UI wiring) |
 
 ## Key design decisions
 

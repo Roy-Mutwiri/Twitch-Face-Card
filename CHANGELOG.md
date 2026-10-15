@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 — 2026-10-15
+- **In-app updates.** When a new version is published, FaceFrame shows an *Update now / Skip* window at start.
+  *Update now* downloads the installer, verifies its SHA-256, closes FaceFrame, updates it in place (settings kept)
+  and reopens it, in about 40 s. *Skip* asks again at the next start. Diagnostics page → *Check for updates*.
+- Launcher no longer leaks PyInstaller variables to the app (a relaunched FaceFrame.exe could fail with
+  "Failed to load Python DLL").
+- Users of 1.1.0 install 1.2.0 once from the website. From then on, updates come through the app.
+
 ## 1.1.0 — 2026-10-15
 **Highest quality & playback**
 - Direct Twitch stream source (live and VODs, `?t=` start time): full 1080p60 decode via Streamlink + FFmpeg,

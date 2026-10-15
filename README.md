@@ -19,7 +19,7 @@
 <p align="center">
   <a href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/releases/latest"><img src="https://img.shields.io/github/v/release/Roy-Mutwiri/Twitch-Face-Card?label=version&color=3b82f6" alt="version"></a>
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20(64--bit)-0078D4?logo=windows" alt="Windows 10/11">
-  <img src="https://img.shields.io/badge/tests-98%20passing-22c55e" alt="tests">
+  <img src="https://img.shields.io/badge/tests-105%20passing-22c55e" alt="tests">
   <a href="https://roy-mutwiri.github.io/Twitch-Face-Card/"><img src="https://img.shields.io/badge/website-FaceFrame-8b5cf6" alt="website"></a>
 </p>
 
@@ -59,6 +59,19 @@
 |---|---|
 | NVIDIA GPU with driver 528 or newer (RTX 50 series: driver 570+) | Everything, including **Enhanced / Best quality** |
 | No NVIDIA GPU, or an older driver | Everything except AI upscaling. **Fast** mode still uses the full stream quality. |
+
+### Updates
+
+FaceFrame checks for a new version every time it starts. When one is out you get a pop-up:
+
+- **Update now:** downloads and verifies the new installer, then FaceFrame closes, updates itself (settings kept)
+  and reopens. It takes about 40 s.
+- **Skip:** nothing changes, and FaceFrame asks again the next time you open it.
+
+You never need to download the app again. *(If you have 1.1.0, install the latest version once from the link
+above. From then on, updates come through the app.)*
+
+<p align="center"><img src="docs/screenshots/update.png" width="420" alt="Update pop-up"></p>
 
 ## Quick start (2 minutes)
 
@@ -118,11 +131,20 @@ git clone https://github.com/Roy-Mutwiri/Twitch-Face-Card.git
 cd Twitch-Face-Card
 powershell -ExecutionPolicy Bypass -File setup.ps1     # uv venv + locked packages + CUDA PyTorch + models
 .venv\Scripts\python -m faceframe                      # run
-.venv\Scripts\python -m pytest -q                      # 98 tests
+.venv\Scripts\python -m pytest -q                      # 105 tests
 powershell -ExecutionPolicy Bypass -File installer\build_installer.ps1   # → dist\FaceFrame-Setup-<ver>.exe
 ```
 
 Building the installer needs [Inno Setup 6](https://jrsoftware.org/isinfo.php) and `uv`.
+
+### Publishing an update
+
+```powershell
+powershell -ExecutionPolicy Bypass -File installerelease.ps1 -Version 1.2.1 -Notes "What changed"
+```
+
+This sets the version, runs the tests, builds the installer, pushes and creates the GitHub release with
+`FaceFrame-Setup.exe` and `SHA256SUMS.txt`. Every installed FaceFrame then shows the update pop-up at its next start.
 
 ---
 

@@ -1,7 +1,7 @@
 ; FaceFrame installer (Inno Setup 6). Built by installer\build_installer.ps1 from the staged folder.
 #define AppName "FaceFrame"
 #ifndef AppVersion
-  #define AppVersion "1.1.0"
+  #define AppVersion "1.2.0"
 #endif
 #ifndef StageDir
   #define StageDir "..\build\stage"
@@ -59,6 +59,8 @@ Name: "{autodesktop}\FaceFrame"; Filename: "{app}\FaceFrame.exe"; IconFilename: 
 Filename: "powershell.exe"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\bootstrap.ps1"" -Quiet"; WorkingDir: "{app}"; StatusMsg: "Installing components (Python, AI runtime, models). A setup window shows the progress - this can take several minutes..."; Flags: waituntilterminated; Tasks: not cpuonly
 Filename: "powershell.exe"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\bootstrap.ps1"" -Quiet -CpuOnly"; WorkingDir: "{app}"; StatusMsg: "Installing components (Python, models). A setup window shows the progress..."; Flags: waituntilterminated; Tasks: cpuonly
 Filename: "{app}\FaceFrame.exe"; Description: "Launch FaceFrame"; Flags: nowait postinstall skipifsilent
+; in-app update (silent, /RELAUNCH=1): reopen FaceFrame when done
+Filename: "{app}\FaceFrame.exe"; Flags: nowait; Check: IsRelaunch
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\.venv"
@@ -67,8 +69,14 @@ Type: filesandordirs; Name: "{app}\runtime"
 Type: filesandordirs; Name: "{app}\faceframe"
 Type: files; Name: "{app}\installed.flag"
 Type: files; Name: "{app}\install.log"
+Type: files; Name: "{app}\update.log"
 
 [Code]
+function IsRelaunch(): Boolean;
+begin
+  Result := WizardSilent and (ExpandConstant('{param:RELAUNCH|0}') = '1');
+end;
+
 function InitializeSetup(): Boolean;
 begin
   Result := True;

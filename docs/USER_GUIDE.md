@@ -121,6 +121,6 @@ Output page → tick **Show test pattern** → record a few seconds locally in L
 
 ## 8. Updating and uninstalling
 
-- **Update:** run the newer FaceFrame-Setup.exe over the old one; settings are kept.
+- **Update:** FaceFrame checks for updates every time it starts. Choose **Update now** in the pop-up (it closes, updates and reopens by itself, settings are kept) or **Skip** (it asks again next time). Manual check: Diagnostics page → *Check for updates*. Running a newer FaceFrame-Setup.exe over the old one also works.
 - **Repair:** Start menu → *Repair FaceFrame* (re-downloads components).
 - **Uninstall:** Windows Settings → Apps → FaceFrame → Uninstall (settings in `%APPDATA%\FaceFrame` are kept).

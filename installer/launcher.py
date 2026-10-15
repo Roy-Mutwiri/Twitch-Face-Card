@@ -23,7 +23,11 @@ def main() -> int:
                               os.path.join(here, "bootstrap.ps1")], cwd=here)
         return 1
     flags = 0x00000008 | 0x00000200   # DETACHED_PROCESS | CREATE_NEW_PROCESS_GROUP
-    subprocess.Popen([pyw, "-m", "faceframe", *sys.argv[1:]], cwd=here, creationflags=flags, close_fds=True)
+    # PyInstaller's bootloader variables must not leak into the app: anything the app starts later (the
+    # updater -> installer -> FaceFrame.exe) would otherwise look for this launcher's deleted temp folder
+    # ("Failed to load Python DLL ... _MEIxxxx").
+    env = {k: v for k, v in os.environ.items() if not k.upper().startswith(("_MEI", "_PYI"))}
+    subprocess.Popen([pyw, "-m", "faceframe", *sys.argv[1:]], cwd=here, creationflags=flags, close_fds=True, env=env)
     return 0
 
 

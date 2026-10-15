@@ -1,6 +1,6 @@
-# Testing & QA report: FaceFrame 1.1.0
+# Testing & QA report: FaceFrame 1.2.0
 
-Release testing on 2026-10-15. Everything below was **measured**. Failures are listed with their cause and fix,
+Release testing on 2026-10-15 (the live QA ran on 1.1.0; 1.2.0 adds in-app updates, tested below). Everything below was **measured**. Failures are listed with their cause and fix,
 not hidden.
 
 **Test PC:** Windows 11 Pro 26200 · NVIDIA GeForce RTX 5060 Ti (driver ≥ 580) · Python 3.12 · live channel
@@ -10,7 +10,7 @@ not hidden.
 
 | Area | Result |
 |---|---|
-| Automated tests (`pytest`) | **100 / 100 pass** (4 new regression tests from this QA round) |
+| Automated tests (`pytest`) | **105 / 105 pass** (incl. updater tests) |
 | Live QA suite, 10-min soak (`tools/qa_live.py`) | **18 / 19 pass**. The one miss happened while another app (Ollama) used 68 % of the GPU, see below |
 | Fresh-PC install, NVIDIA (clean package cache) | ✅ exit 0, 7.6 min including the 2.5 GB GPU runtime, self-test OK (FP16 on GPU) |
 | Fresh-PC install, CPU-only (no PyTorch) | ✅ exit 0, self-test OK, live stream runs in Fast mode at 29.7 fps |
@@ -83,6 +83,24 @@ for 30 fps output.
 Live vs past broadcast of the same streamer: both are 1080p60 at about 9 Mbit/s (9.04 vs 8.44), with the same face
 size, so the quality is the same. A soft picture comes from small webcams, Tight framing or very large outputs,
 not from live mode.
+
+## In-app update (1.2.0)
+
+Tested end to end with a local copy of the GitHub release feed. A fresh 1.2.0 install was marked as 1.1.9 and
+started through `FaceFrame.exe`, like a user would:
+
+| Step | Result |
+|---|---|
+| Start → pop-up "FaceFrame 1.2.0 is available" with release notes | ✅ shown after about 3 s |
+| **Skip** | ✅ pop-up closes, app keeps running; log: "asks again next start" |
+| Restart | ✅ pop-up shown again |
+| **Update now** | ✅ download + SHA-256 check → app closes in 0.5 s → installer progress → **reopened as 1.2.0 in 37 s** |
+| After the update | ✅ no pop-up (current = latest) |
+| Bad checksum / offline / no newer release | ✅ unit tests: rejected / silently skipped / no pop-up |
+
+Bugs found by this test and fixed: the update helper died when it started with `DETACHED_PROCESS` (PowerShell got
+no console). The relaunched `FaceFrame.exe` failed with "Failed to load Python DLL" because PyInstaller variables
+leaked through the launcher.
 
 ## Installer matrix
 

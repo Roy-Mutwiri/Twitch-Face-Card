@@ -38,6 +38,7 @@ from . import theme as T  # noqa: E402
 from .image_view import ImageView, Overlay  # noqa: E402
 from .output_window import OUTPUT_TITLE, OutputWindow  # noqa: E402
 from .source_picker import SourcePickerDialog  # noqa: E402
+from .update_ui import UpdateController  # noqa: E402
 
 log = logging.getLogger("faceframe.app")
 
@@ -121,6 +122,10 @@ class ControlWindow(QMainWindow):
         self._save_timer.setSingleShot(True)
         self._save_timer.timeout.connect(self.save_settings)
         self._offer_resume()
+        # updates: checked in the background a few seconds after start; "Skip" asks again next start
+        self.updates = UpdateController(self)
+        if UpdateController.enabled():
+            QTimer.singleShot(3000, self.updates.check)
         if s.quality.mode == "enhanced":
             self._ensure_engine()
 
@@ -715,6 +720,12 @@ class ControlWindow(QMainWindow):
         self.status_lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
         self.status_lbl.setWordWrap(True)
         cb.addWidget(self.status_lbl)
+        v.addWidget(card)
+        card, cb = self._card("Updates", f"FaceFrame {__version__}. New versions are offered automatically when "
+                              "FaceFrame starts.", "update")
+        self.btn_check_update = self._btn("Check for updates", "update")
+        self.btn_check_update.clicked.connect(lambda: self.updates.check(manual=True))
+        cb.addWidget(self.btn_check_update)
         v.addWidget(card)
         v.addStretch(1)
         add_page("Diagnostics", "chart-line", page)
