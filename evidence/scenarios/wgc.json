@@ -1,0 +1,2987 @@
+{
+ "rows": [
+  {
+   "t": 0.54,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 51.8,
+   "uniq_fps": 51.8,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 1.04,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.8,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 51.8,
+   "uniq_fps": 51.8,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 1.54,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.76,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.3,
+   "uniq_fps": 53.3,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 2.04,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.72,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.0,
+   "uniq_fps": 53.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 2.54,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.89,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.9,
+   "uniq_fps": 52.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 3.04,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.97,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.2,
+   "uniq_fps": 54.2,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 3.54,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.97,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.6,
+   "uniq_fps": 52.6,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 4.04,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.74,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.1,
+   "uniq_fps": 53.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 4.54,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.54,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.1,
+   "uniq_fps": 53.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 5.04,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.64,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.3,
+   "uniq_fps": 52.3,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 5.54,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.64,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.5,
+   "uniq_fps": 52.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 6.04,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.6,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.0,
+   "uniq_fps": 52.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 6.55,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.59,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.5,
+   "uniq_fps": 52.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 7.05,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.58,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.5,
+   "uniq_fps": 52.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 7.55,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.57,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.9,
+   "uniq_fps": 52.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 8.05,
+   "label": "moved window",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.57,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.9,
+   "uniq_fps": 53.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 8.55,
+   "label": "resized larger",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.57,
+   "neutral": false,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.8,
+   "uniq_fps": 53.8,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 9.05,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.57,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 53.8,
+   "uniq_fps": 51.3,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 9.55,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.57,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 54.7,
+   "uniq_fps": 51.7,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 10.05,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.57,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 54.1,
+   "uniq_fps": 51.0,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 10.55,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.1,
+   "uniq_fps": 52.1,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 11.05,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.3,
+   "uniq_fps": 54.7,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 11.55,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.5,
+   "uniq_fps": 54.5,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 12.05,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.48,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 56.3,
+   "uniq_fps": 55.3,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 12.56,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.48,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 56.3,
+   "uniq_fps": 55.3,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 13.06,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.48,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 56.2,
+   "uniq_fps": 55.2,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 13.56,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.48,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 56.3,
+   "uniq_fps": 55.7,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Window size changed 1586x993 -> 1886x1143"
+  },
+  {
+   "t": 14.06,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.7,
+   "uniq_fps": 55.2,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 14.56,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.3,
+   "uniq_fps": 54.8,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 15.06,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.7,
+   "uniq_fps": 54.7,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 15.56,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 55.2,
+   "uniq_fps": 54.2,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 16.06,
+   "label": "resized larger",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 54.4,
+   "uniq_fps": 53.4,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 16.56,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1886,
+    1143
+   ],
+   "cap_fps": 54.4,
+   "uniq_fps": 53.4,
+   "msg": "Window size changed 1586x993 -> 1886x1143",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 17.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.2,
+   "uniq_fps": 51.7,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Window size changed 1886x1143 -> 1586x993"
+  },
+  {
+   "t": 17.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.4,
+   "uniq_fps": 51.9,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Window size changed 1886x1143 -> 1586x993"
+  },
+  {
+   "t": 18.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "CHECKING",
+   "score": 0.49,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.4,
+   "uniq_fps": 51.9,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Window size changed 1886x1143 -> 1586x993"
+  },
+  {
+   "t": 18.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.7,
+   "uniq_fps": 52.1,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 19.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.8,
+   "uniq_fps": 53.3,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 19.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.5,
+   "uniq_fps": 52.0,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 20.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.54,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.8,
+   "uniq_fps": 51.8,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 20.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.54,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.3,
+   "uniq_fps": 52.3,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 21.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.54,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.0,
+   "uniq_fps": 53.0,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 21.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.56,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.8,
+   "uniq_fps": 53.8,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 22.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.57,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.7,
+   "uniq_fps": 53.2,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 22.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.56,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.3,
+   "uniq_fps": 52.8,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 23.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.35,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.0,
+   "uniq_fps": 53.0,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 23.57,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.26,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.5,
+   "uniq_fps": 53.5,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 24.07,
+   "label": "resized back",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.35,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.7,
+   "uniq_fps": 53.7,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 24.59,
+   "label": "minimized",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.6,
+   "uniq_fps": 54.6,
+   "msg": "Window size changed 1886x1143 -> 1586x993",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 25.09,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 41.2,
+   "uniq_fps": 41.2,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 25.59,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 26.8,
+   "uniq_fps": 26.8,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 26.09,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 13.5,
+   "uniq_fps": 13.5,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 26.59,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 27.09,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 27.59,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 28.09,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 28.59,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 29.09,
+   "label": "minimized",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 29.61,
+   "label": "restored",
+   "source": "MINIMIZED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.45,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Edge window is minimized: no frames are rendered",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 30.11,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 50.8,
+   "uniq_fps": 2.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 30.61,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.5,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.4,
+   "uniq_fps": 1.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 31.12,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.5,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.3,
+   "uniq_fps": 0.7,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 31.62,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.5,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.2,
+   "uniq_fps": 1.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 32.12,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.4,
+   "uniq_fps": 35.3,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 32.62,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.2,
+   "uniq_fps": 43.7,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 33.12,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.7,
+   "uniq_fps": 47.2,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 33.62,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.4,
+   "uniq_fps": 55.3,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 34.12,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 56.2,
+   "uniq_fps": 55.2,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 34.62,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.7,
+   "uniq_fps": 54.7,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 35.12,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.8,
+   "uniq_fps": 54.8,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 35.62,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.8,
+   "uniq_fps": 53.8,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 36.12,
+   "label": "restored",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.6,
+   "uniq_fps": 53.6,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 36.64,
+   "label": "stopped source",
+   "source": "STOPPED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": null,
+   "cap_fps": 53.0,
+   "uniq_fps": 53.0,
+   "msg": "Source stopped",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 37.14,
+   "label": "stopped source",
+   "source": "STOPPED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": null,
+   "cap_fps": 39.4,
+   "uniq_fps": 39.4,
+   "msg": "Source stopped",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 37.64,
+   "label": "stopped source",
+   "source": "STOPPED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": null,
+   "cap_fps": 26.2,
+   "uniq_fps": 26.2,
+   "msg": "Source stopped",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 38.14,
+   "label": "stopped source",
+   "source": "STOPPED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "INVALID",
+   "score": 0.55,
+   "neutral": true,
+   "panel_rect": [
+    245,
+    454,
+    272,
+    148
+   ],
+   "src_size": null,
+   "cap_fps": 12.1,
+   "uniq_fps": 12.1,
+   "msg": "Source stopped",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 39.61,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 50.7,
+   "uniq_fps": 50.7,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 40.11,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.5,
+   "uniq_fps": 52.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 40.61,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.0,
+   "uniq_fps": 53.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 41.11,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.8,
+   "uniq_fps": 53.8,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 41.61,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.4,
+   "uniq_fps": 53.4,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 42.11,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.4,
+   "uniq_fps": 53.4,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 42.61,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.9,
+   "uniq_fps": 53.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 43.12,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.4,
+   "uniq_fps": 53.4,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 43.62,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.9,
+   "uniq_fps": 53.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 44.12,
+   "label": "restarted same window (Edge untouched)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.8,
+   "uniq_fps": 52.3,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 44.93,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.6,
+   "uniq_fps": 53.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 45.43,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 50.3,
+   "uniq_fps": 40.7,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 45.93,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 50.5,
+   "uniq_fps": 30.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 46.44,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.05,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 51.0,
+   "uniq_fps": 24.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 46.94,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.11,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 49.5,
+   "uniq_fps": 17.5,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 47.44,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.15,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.7,
+   "uniq_fps": 19.6,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 47.94,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.15,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.2,
+   "uniq_fps": 16.5,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 48.44,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.15,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 47.7,
+   "uniq_fps": 7.5,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 48.94,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.15,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 34.8,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 49.44,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 21.1,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 49.94,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 6.5,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 50.44,
+   "label": "navigated tab to another page",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 50.94,
+   "label": "navigated tab to another page",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No new frames for 1.6s",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 51.46,
+   "label": "navigated tab to another page",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No new frames for 1.6s",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 51.96,
+   "label": "navigated tab to another page",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No new frames for 1.6s",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 52.46,
+   "label": "navigated tab to another page",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No new frames for 1.6s",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 53.26,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.16,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.5,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 53.76,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 45.3,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 54.26,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 47.1,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 54.76,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 49.0,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 55.26,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 47.5,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 55.76,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 45.4,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 56.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.0,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 45.5,
+   "uniq_fps": 0.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 56.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.97,
+   "neutral": true,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 45.6,
+   "uniq_fps": 25.0,
+   "msg": "Capturing",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 57.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.97,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 49.9,
+   "uniq_fps": 27.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 57.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 52.7,
+   "uniq_fps": 28.6,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 58.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.0,
+   "uniq_fps": 29.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 58.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.6,
+   "uniq_fps": 29.6,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 59.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.1,
+   "uniq_fps": 29.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 59.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.6,
+   "uniq_fps": 29.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 60.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.8,
+   "uniq_fps": 30.2,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 60.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.0,
+   "uniq_fps": 33.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 61.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.0,
+   "uniq_fps": 39.0,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 61.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.5,
+   "uniq_fps": 44.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 62.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.2,
+   "uniq_fps": 51.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 62.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.98,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.9,
+   "uniq_fps": 53.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 63.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 56.0,
+   "uniq_fps": 54.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 63.77,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.9,
+   "uniq_fps": 54.4,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 64.27,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.6,
+   "uniq_fps": 55.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 64.78,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.6,
+   "uniq_fps": 53.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 65.28,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 53.9,
+   "uniq_fps": 52.9,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 65.78,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.6,
+   "uniq_fps": 53.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 66.28,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 54.1,
+   "uniq_fps": 52.5,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  },
+  {
+   "t": 66.78,
+   "label": "navigated back",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    253,
+    453,
+    272,
+    148
+   ],
+   "src_size": [
+    1586,
+    993
+   ],
+   "cap_fps": 55.1,
+   "uniq_fps": 47.1,
+   "msg": "Capturing",
+   "event": "Webcam area confirmed (score 0.97)"
+  }
+ ],
+ "notes": [
+  "window hwnd 0x67e1024; initial panel (window px) [245, 454, 272, 148]",
+  "person selected: True",
+  "after stop: source=None, frames still arriving? capture fps 0.0"
+ ]
+}

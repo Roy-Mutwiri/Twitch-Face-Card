@@ -1,0 +1,17 @@
+﻿FaceFrame 1.1.0
+
+FaceFrame follows the streamer's face in a Twitch stream's webcam corner and gives TikTok LIVE Studio a clean, framed, sharpened picture - with the stream's sound in sync.
+
+What this installer does
+  - Installs FaceFrame for your Windows user (no administrator rights needed).
+  - Sets up a private Python 3.12 (included) and downloads the app's libraries and, on PCs with an NVIDIA graphics card, the GPU AI runtime (about 2.5 GB). A progress window shows each step.
+  - Verifies the AI model files and runs a self-test.
+
+Requirements
+  - Windows 10 (version 1903 or newer) or Windows 11, 64-bit
+  - Internet connection during installation
+  - Optional: NVIDIA GPU (driver 528 or newer) for AI enhancement. Without it FaceFrame runs in Fast mode.
+  - About 6 GB free disk space with the GPU runtime (about 1 GB without)
+
+Windows SmartScreen may warn about an unknown publisher because the installer is not code-signed. Choose "More info" -> "Run anyway" if you trust the source.
+

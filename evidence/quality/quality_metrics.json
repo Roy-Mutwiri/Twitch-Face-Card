@@ -1,0 +1,91 @@
+{
+ "frames": 661,
+ "panel": [
+  350,
+  190
+ ],
+ "A_reconstruction_x2_face96": {
+  "bicubic": {
+   "psnr_mean": 32.83823383296375,
+   "ssim_mean": 0.9215581975037165,
+   "n": 31
+  },
+  "lanczos": {
+   "psnr_mean": 33.04038061458815,
+   "ssim_mean": 0.9243235773658509,
+   "n": 31
+  },
+  "fast(cubic+sharpen0.25)": {
+   "psnr_mean": 33.01418045448159,
+   "ssim_mean": 0.9247459651856706,
+   "n": 31
+  },
+  "x4v3": {
+   "psnr_mean": 28.90756468586162,
+   "ssim_mean": 0.9000825543513753,
+   "n": 31
+  },
+  "x2plus": {
+   "psnr_mean": 27.260687105278194,
+   "ssim_mean": 0.8375087904240005,
+   "n": 31
+  }
+ },
+ "B_production_1280x720": {
+  "fast_sharpen0": {
+   "temporal_mean_abs_diff": 0.4221600957269616,
+   "backprojection_psnr": 42.70999577094918,
+   "sr_ms_p50": 0.0,
+   "sr_ms_p95": 0.0,
+   "crop_size_example": [
+    272,
+    153
+   ],
+   "flicker_vs_fast": 1.0
+  },
+  "fast_sharpen0.25": {
+   "temporal_mean_abs_diff": 0.4351803360921683,
+   "backprojection_psnr": 45.54491060629882,
+   "sr_ms_p50": 0.0,
+   "sr_ms_p95": 0.0,
+   "crop_size_example": [
+    272,
+    153
+   ],
+   "flicker_vs_fast": 1.0308419495281422
+  },
+  "enh_x4v3_s1.0": {
+   "temporal_mean_abs_diff": 0.5697354720318455,
+   "backprojection_psnr": 31.267044794384795,
+   "sr_ms_p50": 9.134500000072876,
+   "sr_ms_p95": 10.44386999856215,
+   "crop_size_example": [
+    272,
+    153
+   ],
+   "flicker_vs_fast": 1.3495720647181453
+  },
+  "enh_x4v3_s0.6": {
+   "temporal_mean_abs_diff": 0.4927924442390653,
+   "backprojection_psnr": 36.251955378068025,
+   "sr_ms_p50": 9.150249999947846,
+   "sr_ms_p95": 10.952949997590622,
+   "crop_size_example": [
+    272,
+    153
+   ],
+   "flicker_vs_fast": 1.16731175974952
+  },
+  "enh_x2plus_s1.0": {
+   "temporal_mean_abs_diff": 0.6003549105229498,
+   "backprojection_psnr": 33.21568623817181,
+   "sr_ms_p50": 47.979700000723824,
+   "sr_ms_p95": 60.75300999691535,
+   "crop_size_example": [
+    272,
+    153
+   ],
+   "flicker_vs_fast": 1.4221024597058038
+  }
+ }
+}

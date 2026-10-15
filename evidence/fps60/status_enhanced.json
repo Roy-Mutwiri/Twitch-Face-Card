@@ -1,0 +1,59 @@
+{
+ "source_state": "RUNNING",
+ "source_msg": "Capturing",
+ "source_recovery": "",
+ "track_state": "TRACKING",
+ "panel_validity": "VALID",
+ "panel_score": 0.9773426651954651,
+ "panel_event": "Webcam area confirmed (score 1.00)",
+ "candidates": 1,
+ "capture_fps": 54.932790738522215,
+ "unique_source_fps": 52.41310700613495,
+ "process_fps": 52.90670708400161,
+ "detect_hz": 11.463335407503214,
+ "detect_ms": 2.845424110220412,
+ "process_ms": 16.557974966279325,
+ "latency_p50": 19.3035,
+ "latency_p95": 32.2536,
+ "latency_p99": 34.4079,
+ "queue_age_p50": 2.0446,
+ "queue_age_p95": 13.1244,
+ "latency_clock": "host-perf-ns",
+ "dropped_process": 22,
+ "dropped_detect": 620,
+ "stale_detections": 0,
+ "panel_px": [
+  272,
+  148
+ ],
+ "source_size": [
+  1586,
+  993
+ ],
+ "video_size": null,
+ "source_kind": "wgc-rendered-window",
+ "crop_px": [
+  219,
+  123
+ ],
+ "out_px": [
+  1280,
+  720
+ ],
+ "drawn_px": [
+  1280,
+  720
+ ],
+ "scale": 5.844748858447488,
+ "mode_used": "enhanced",
+ "mode_reason": "",
+ "warning": "Small source crop (219x123) enlarged 5.8x; enlargement cannot recover detail that was never transmitted",
+ "sr_ms": 7.128868523098937,
+ "flicker_ratio": 1.248307377359977,
+ "fallback": "",
+ "unique_outputs_observed_by_poller": 396,
+ "crop_track_len": 395,
+ "crop_center_step_px_p50": 0.0,
+ "crop_center_step_px_p95": 1.118033988749895,
+ "crop_h_step_px_p95": 1.0
+}

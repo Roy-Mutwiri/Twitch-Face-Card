@@ -1,0 +1,85 @@
+{
+ "source_state": "RUNNING",
+ "source_msg": "Extension connected",
+ "source_recovery": "",
+ "track_state": "TRACKING",
+ "panel_validity": "VALID",
+ "panel_score": 0.9990692734718323,
+ "panel_event": "Webcam area confirmed (score 1.00)",
+ "candidates": 2,
+ "capture_fps": 29.953719472681968,
+ "unique_source_fps": 28.430716830684016,
+ "process_fps": 29.770883782954883,
+ "detect_hz": 11.834027862124959,
+ "detect_ms": 2.91420779479499,
+ "process_ms": 8.95397466402553,
+ "latency_p50": 27.0706,
+ "latency_p95": 29.41974,
+ "latency_p99": 31.4729,
+ "queue_age_p50": 18.764816,
+ "queue_age_p95": 19.076304,
+ "latency_clock": "browser-calibrated-to-host-perf",
+ "dropped_process": 0,
+ "dropped_detect": 61,
+ "stale_detections": 0,
+ "panel_px": [
+  350,
+  190
+ ],
+ "source_size": [
+  1280,
+  720
+ ],
+ "video_size": [
+  1280,
+  720
+ ],
+ "source_kind": "native-video-element",
+ "crop_px": [
+  251,
+  141
+ ],
+ "out_px": [
+  1280,
+  720
+ ],
+ "drawn_px": [
+  1280,
+  720
+ ],
+ "scale": 5.099601593625498,
+ "mode_used": "fast",
+ "mode_reason": "",
+ "warning": "Small source crop (251x141) enlarged 5.1x; enlargement cannot recover detail that was never transmitted",
+ "sr_ms": 0.0,
+ "flicker_ratio": null,
+ "fallback": "",
+ "native_frames": 301,
+ "present_to_receive_p50": 3.72534,
+ "present_to_receive_p95": 4.472608,
+ "readback_p50": 2.299999952316284,
+ "readback_p95": 2.799999952316284,
+ "rx_fps": 29.94087337221275,
+ "rx_MBps": null,
+ "clock_calibrated": true,
+ "clock_rtt_ms": 0.2645,
+ "dropped_old_geometry": 0,
+ "malformed": 0,
+ "rejected_handshakes": 0,
+ "rejected_tokens": 0,
+ "conversion": "NV12 bt709 limited (decoder samples)",
+ "meta": {
+  "video": {
+   "w": 1280,
+   "h": 720
+  },
+  "path": "videoframe",
+  "pathError": "",
+  "colour": {
+   "matrix": "bt709",
+   "fullRange": false,
+   "primaries": "bt709",
+   "transfer": "bt709"
+  }
+ }
+}

@@ -1,0 +1,30 @@
+# environments and build output
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.spec.bak
+
+# AI models are downloaded and checksum-verified by tools/get_models.py
+models/*.onnx
+models/*.pth
+
+# evidence: keep measured reports (json/md), not stream frames or recordings
+evidence/**/*.png
+evidence/**/*.jpg
+evidence/**/*.mp4
+evidence/**/*.ts
+evidence/**/*.y4m
+evidence/**/*.raw
+evidence/**/*.npy
+evidence/clip*/
+evidence/gui/settings_*.json
+
+# local
+*.log
+installed.flag
+
+# local handoff notes (describe this PC)
+PROJECT_STATE.md

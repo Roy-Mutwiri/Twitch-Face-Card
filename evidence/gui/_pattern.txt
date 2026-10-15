@@ -1,0 +1,74 @@
+[ WARN:0@0.162] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+{
+ "source_state": "RUNNING",
+ "source_msg": "Capturing",
+ "source_recovery": "",
+ "track_state": "TRACKING",
+ "panel_validity": "VALID",
+ "panel_score": 0.9994118213653564,
+ "panel_event": "Webcam area confirmed (score 1.00)",
+ "candidates": 1,
+ "capture_fps": 52.18185899688677,
+ "unique_source_fps": 48.16806318925289,
+ "process_fps": 29.87881557534713,
+ "detect_hz": 11.787570754911192,
+ "detect_ms": 2.669190440985396,
+ "process_ms": 7.088639722593282,
+ "latency_p50": 17.4568,
+ "latency_p95": 28.9731,
+ "latency_p99": 67.9723,
+ "queue_age_p50": 9.8617,
+ "queue_age_p95": 18.9156,
+ "latency_clock": "host-perf-ns",
+ "dropped_process": 402,
+ "dropped_detect": 502,
+ "stale_detections": 0,
+ "panel_px": [
+  262,
+  149
+ ],
+ "source_size": [
+  1586,
+  993
+ ],
+ "video_size": null,
+ "source_kind": "wgc-rendered-window",
+ "crop_px": [
+  188,
+  125
+ ],
+ "out_px": [
+  1080,
+  720
+ ],
+ "drawn_px": [
+  1080,
+  720
+ ],
+ "scale": 5.74468085106383,
+ "mode_used": "fast",
+ "mode_reason": "",
+ "warning": "Small source crop (188x125) enlarged 5.7x; enlargement cannot recover detail that was never transmitted",
+ "sr_ms": 0.0,
+ "flicker_ratio": null,
+ "fallback": "",
+ "output_unique_fps": 0.0,
+ "output_uniques": 0,
+ "output_poll_repeats": 0,
+ "client_px": [
+  1080,
+  720
+ ],
+ "size_ok": true,
+ "minimized": false,
+ "paint_latency_p50": NaN,
+ "paint_latency_p95": NaN,
+ "paint_latency_p99": NaN,
+ "log": [
+  "WGC source summit1g - Twitch - Profile 1 - Microsoft\u200b Edge",
+  "panel applied",
+  "output started",
+  "test pattern on"
+ ],
+ "elapsed": 19.989083290100098
+}

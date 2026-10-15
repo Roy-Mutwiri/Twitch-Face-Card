@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>FaceFrame Bridge</h1>
+  <div id="tab" class="muted"></div>
+  <div id="state" class="state">Inactive on this tab</div>
+  <div class="row">
+    <button id="activate" class="primary">Activate on this tab</button>
+    <button id="stop">Stop</button>
+  </div>
+  <p class="muted small">Captures only after you confirm a player and FaceFrame selects a webcam area. Pixels go only to 127.0.0.1.</p>
+  <details id="pair">
+    <summary>Connection (pairing is automatic)</summary>
+    <label>Port <input id="port" type="number" min="1024" max="65535"></label>
+    <label>Pairing code <input id="token" type="password" autocomplete="off" placeholder="optional: filled in automatically"></label>
+    <div class="row"><button id="save">Save</button><span id="saved" class="muted"></span></div>
+  </details>
+  <script src="popup.js"></script>
+</body>
+</html>

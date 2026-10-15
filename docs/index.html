@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FaceFrame — automatic webcam framing for TikTok LIVE Studio</title>
+<meta name="description" content="FaceFrame follows the streamer's face in a Twitch stream's webcam corner and gives TikTok LIVE Studio a clean, framed, AI-sharpened picture with in-sync sound.">
+<meta property="og:title" content="FaceFrame for Windows">
+<meta property="og:description" content="Automatic webcam framing for TikTok LIVE Studio — 1080p60 Twitch decode, GPU AI enhancement, in-sync audio.">
+<meta property="og:image" content="assets/faceframe_512.png">
+<link rel="icon" href="assets/faceframe_512.png">
+<style>
+  :root { --bg:#0b0d12; --surface:#141822; --card:#1a1f2b; --border:#272d3b; --text:#e9ebf2; --muted:#9aa3b5;
+          --violet:#8b5cf6; --blue:#3b82f6; --ok:#22c55e; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,sans-serif; color:var(--text);
+         background:var(--bg); line-height:1.55; }
+  a { color:#a78bfa; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  header { padding:22px 0; display:flex; align-items:center; gap:12px; }
+  header img { width:36px; height:36px; }
+  header b { font-size:18px; letter-spacing:.3px; }
+  header nav { margin-left:auto; display:flex; gap:22px; }
+  header nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+  header nav a:hover { color:var(--text); }
+  .hero { position:relative; padding:56px 0 40px; text-align:center; overflow:hidden; }
+  .hero::before { content:""; position:absolute; inset:-200px -100px auto; height:600px; z-index:-1;
+                  background:radial-gradient(closest-side, rgba(139,92,246,.35), transparent),
+                             radial-gradient(closest-side at 70% 40%, rgba(59,130,246,.25), transparent); filter:blur(10px); }
+  .hero img.logo { width:96px; height:96px; filter:drop-shadow(0 12px 30px rgba(124,92,255,.45)); }
+  h1 { font-size:46px; line-height:1.1; margin:18px 0 12px; letter-spacing:-.5px; }
+  h1 span { background:linear-gradient(90deg,#a78bfa,#60a5fa); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .lead { color:var(--muted); font-size:19px; max-width:720px; margin:0 auto 30px; }
+  .btn { display:inline-flex; align-items:center; gap:12px; padding:16px 28px; border-radius:14px; font-weight:700;
+         font-size:18px; text-decoration:none; color:white; background:linear-gradient(90deg,var(--violet),var(--blue));
+         box-shadow:0 12px 34px rgba(99,102,241,.45); transition:transform .15s, box-shadow .15s; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 16px 44px rgba(99,102,241,.6); }
+  .btn svg { width:24px; height:24px; }
+  .meta { margin-top:14px; color:var(--muted); font-size:14px; }
+  .meta a { color:var(--muted); }
+  .shot { margin:42px auto 0; max-width:1040px; border-radius:16px; overflow:hidden; border:1px solid var(--border);
+          box-shadow:0 30px 80px rgba(0,0,0,.55); }
+  .shot img { display:block; width:100%; }
+  section { padding:56px 0; }
+  h2 { font-size:30px; margin:0 0 10px; text-align:center; }
+  .sub { color:var(--muted); text-align:center; margin:0 auto 34px; max-width:680px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; }
+  .card h3 { margin:6px 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); font-size:14.5px; }
+  .ic { width:38px; height:38px; border-radius:10px; display:grid; place-items:center;
+        background:linear-gradient(135deg,rgba(139,92,246,.25),rgba(59,130,246,.25)); font-size:20px; }
+  .steps { counter-reset:s; display:grid; gap:12px; max-width:760px; margin:0 auto; }
+  .step { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 18px 14px 60px; position:relative; }
+  .step::before { counter-increment:s; content:counter(s); position:absolute; left:16px; top:13px; width:30px; height:30px;
+                  border-radius:50%; display:grid; place-items:center; font-weight:700; background:var(--violet); }
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
+  .gallery figure { margin:0; background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  .gallery img { width:100%; display:block; }
+  .gallery figcaption { padding:10px 14px; color:var(--muted); font-size:14px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  td, th { padding:12px 14px; border-bottom:1px solid var(--border); text-align:left; font-size:15px; }
+  th { color:var(--muted); font-weight:600; }
+  .cta { text-align:center; padding:60px 0 80px; }
+  footer { border-top:1px solid var(--border); color:var(--muted); font-size:13px; padding:26px 0 40px; }
+  .note { color:var(--muted); font-size:13px; text-align:center; margin-top:10px; }
+  @media (max-width:640px) { h1 { font-size:34px; } header nav { display:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/faceframe_512.png" alt="">
+    <b>FaceFrame</b>
+    <nav>
+      <a href="#features">Features</a><a href="#how">How it works</a><a href="#screens">Screenshots</a>
+      <a href="https://github.com/Roy-Mutwiri/Twitch-Face-Card">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img class="logo" src="assets/faceframe_512.png" alt="FaceFrame logo">
+    <h1>The streamer's face,<br><span>framed and sharp</span> for TikTok LIVE</h1>
+    <p class="lead">FaceFrame follows the face in a Twitch stream's webcam corner, decodes Twitch's full 1080p60 picture,
+      cleans and sharpens it with your GPU, and hands TikTok LIVE Studio a clean window — with the sound in sync.</p>
+    <a class="btn" id="dl" href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/releases/latest/download/FaceFrame-Setup.exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Download for Windows
+    </a>
+    <div class="meta">Version 1.1.0 · Windows 10 / 11 (64-bit) · free ·
+      <a href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/releases">all releases</a></div>
+    <div class="shot"><img src="screenshots/main.png" alt="FaceFrame main window"></div>
+  </div>
+
+  <section id="features">
+    <h2>Highest quality the stream allows</h2>
+    <p class="sub">Every quality step was measured on real Twitch streams — nothing is promised that the pixels can't deliver.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">📡</div><h3>Full 1080p60 decode</h3><p>Paste a Twitch link (live or past broadcast). FaceFrame decodes the best rendition itself — independent of the browser player size.</p></div>
+      <div class="card"><div class="ic">🎯</div><h3>Automatic face framing</h3><p>Follows the streamer smoothly with head-and-shoulders framing, never jumps to posters or other faces.</p></div>
+      <div class="card"><div class="ic">✨</div><h3>GPU AI enhancement</h3><p>Multi-frame fusion removes compression noise, Real-ESRGAN sharpens — about 12 ms per frame on an RTX GPU.</p></div>
+      <div class="card"><div class="ic">🔊</div><h3>Sound in sync</h3><p>Plays the stream's audio lip-synced to the picture; shows up as “FaceFrame” in the Windows Volume Mixer.</p></div>
+      <div class="card"><div class="ic">⏯️</div><h3>Player controls</h3><p>Pause/resume, volume, position, length and remaining time for past broadcasts.</p></div>
+      <div class="card"><div class="ic">🪟</div><h3>Clean output window</h3><p>A pixel-exact “FaceFrame Output” window for LIVE Studio's Window capture — no buttons, no borders.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>Up and running in two minutes</h2>
+    <p class="sub">The installer sets everything up automatically — including the GPU AI runtime on NVIDIA PCs.</p>
+    <div class="steps">
+      <div class="step"><b>Install</b> — run FaceFrame-Setup.exe. (SmartScreen: More info → Run anyway; the installer is not code-signed.)</div>
+      <div class="step"><b>Paste a Twitch link</b> on the Source page and press Enter. Choose <i>best</i>.</div>
+      <div class="step"><b>Drag around the webcam corner</b> in the preview — the face is picked automatically.</div>
+      <div class="step"><b>Quality → ★ Best quality preset</b>, then <b>Output → 1080 × 720 → Start output</b>.</div>
+      <div class="step"><b>TikTok LIVE Studio → Add source → Window capture → FaceFrame Output.</b> Sound: route FaceFrame to CABLE Input (VB-Audio) and add CABLE Output in LIVE Studio.</div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <h2>Screenshots</h2>
+    <p class="sub">Stream content is blurred in these images; in the app you see the real picture.</p>
+    <div class="gallery">
+      <figure><img src="screenshots/quality.png" alt=""><figcaption>Quality page with the Best quality preset</figcaption></figure>
+      <figure><img src="screenshots/audio.png" alt=""><figcaption>In-sync audio with device choice</figcaption></figure>
+      <figure><img src="screenshots/output.png" alt=""><figcaption>Output page with sharpness advice</figcaption></figure>
+      <figure><img src="screenshots/installer.png" alt=""><figcaption>The installer</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <p class="sub">&nbsp;</p>
+    <table>
+      <tr><th>Windows</th><td>Windows 10 version 1903 or newer, or Windows 11 (64-bit)</td></tr>
+      <tr><th>GPU (optional)</th><td>NVIDIA with driver 528+ for AI enhancement. Without it FaceFrame runs in Fast mode at full stream quality.</td></tr>
+      <tr><th>Disk</th><td>About 6 GB with the GPU runtime, about 1 GB without</td></tr>
+      <tr><th>Internet</th><td>Needed during installation and to watch streams</td></tr>
+      <tr><th>For LIVE Studio sound</th><td><a href="https://vb-audio.com/Cable/">VB-Audio Virtual Cable</a> (free)</td></tr>
+    </table>
+  </section>
+
+  <div class="cta">
+    <h2>Get FaceFrame</h2>
+    <p class="sub">One installer. Everything set up automatically.</p>
+    <a class="btn" href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/releases/latest/download/FaceFrame-Setup.exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Download FaceFrame-Setup.exe
+    </a>
+    <p class="note"><a href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/blob/main/docs/USER_GUIDE.md">User guide</a> ·
+      <a href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/blob/main/docs/TROUBLESHOOTING.md">Troubleshooting</a> ·
+      <a href="https://github.com/Roy-Mutwiri/Twitch-Face-Card/blob/main/docs/TESTING.md">Test report</a></p>
+  </div>
+</div>
+<footer><div class="wrap">FaceFrame · by Roy Mutwiri · Not affiliated with Twitch or TikTok. Stream content belongs to its creators and is processed locally on your PC.</div></footer>
+</body>
+</html>

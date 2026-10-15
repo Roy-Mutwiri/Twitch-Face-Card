@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>FaceFrame Test Stream</title>
+<style>
+ body{margin:0;background:#0e0e10;color:#ddd;font:14px Segoe UI}
+ #side{position:fixed;left:0;top:50px;bottom:0;width:240px;background:#1f1f23}
+ #top{position:fixed;left:0;right:0;top:0;height:50px;background:#18181b;z-index:2}
+ #chat{position:fixed;right:0;top:50px;bottom:0;width:340px;background:#18181b}
+ #main{margin:50px 340px 0 240px}
+ #player{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+ video{width:100%;height:100%;object-fit:contain;display:block}
+ #below{height:1400px;padding:20px}
+</style></head><body>
+<div id="top">FaceFrame controlled test stream (local, recorded native clip)</div><div id="side"></div><div id="chat"></div>
+<div id="main"><div id="player"><video id="v" muted autoplay playsinline></video></div><div id="below">below the player</div></div>
+<script>
+const N = 661, FPS = 30;
+let W = 1280, H = 720, ad = false, frames = [], bg = null, i = 0;
+const canvas = document.createElement('canvas'); canvas.width = W; canvas.height = H;
+const ctx = canvas.getContext('2d');
+let stream = null;
+async function load() {
+  bg = await createImageBitmap(await (await fetch('/clip/background_overview.png')).blob());
+  const ps = [];
+  for (let k = 0; k < N; k++) ps.push(fetch(`/clip/panel_${String(k).padStart(5,'0')}.png`).then(r => r.blob()).then(b => createImageBitmap(b)));
+  frames = await Promise.all(ps);
+}
+function draw() {
+  const s = W / 1280;
+  ctx.drawImage(bg, 0, 0, W, H);
+  if (ad) { ctx.fillStyle = '#c33'; ctx.fillRect(0, 0, W, H); ctx.fillStyle = '#fff'; ctx.font = `${60*s}px sans-serif`; ctx.fillText('ADVERTISEMENT ' + i, 100*s, 360*s); }
+  else ctx.drawImage(frames[i % N], 0, 416 * s, 350 * s, 190 * s);
+  i++;
+}
+function startStream() {
+  stream = canvas.captureStream(FPS);
+  document.getElementById('v').srcObject = stream;
+}
+window.ffSetAd = (on) => { ad = !!on; return ad; };
+window.ffSetRendition = (w, h) => { W = w; H = h; canvas.width = w; canvas.height = h; return [w, h]; };
+window.ffReplaceVideo = () => { const old = document.getElementById('v'); const nv = old.cloneNode(); nv.srcObject = stream; old.replaceWith(nv); nv.play(); return true; };
+window.ffRemoveVideo = () => { document.getElementById('v').remove(); return true; };
+window.ffReady = false;
+load().then(() => { draw(); startStream(); setInterval(draw, 1000 / FPS); window.ffReady = true; });
+</script></body></html>

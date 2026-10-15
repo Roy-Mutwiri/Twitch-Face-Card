@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "FaceFrame Bridge",
+  "version": "1.1.0",
+  "description": "Sends the selected webcam area of a playing video element to the local FaceFrame app (127.0.0.1 only). Activated per tab by clicking the toolbar button.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmotiwcgEfgbdzU5E1Q8Lj1zxaGczFVphG+bWAJAqGCZoMbeRv1ltbE9C9lt6bY5lj6H4X8ogMSS76ktCOZic3ZG866oitu8fbzXuWi25x22isrrGDkQdcOCyaO+JDUW4Gl4VXW71Hf/DRX2XmTNTOnGyJDpFEj8hhPGrUVY1mFa39WRvfaGOypEDmJOq1rqXIuVYB7/fhpCLQmnX374RnuumRHX/ErMto6sGqPFOj91cqCd/RVPxBLmHxXXGeiueIWOVlTSwYzxTXepoSoXlLNpTP6Vz+/HNC//4cjojWcehQaq64XRnPzMwuu+IgL/rPfINZsTZAgvWOFeqcO/ODQIDAQAB",
+  "minimum_chrome_version": "116",
+  "action": { "default_title": "FaceFrame Bridge", "default_popup": "popup.html" },
+  "background": { "service_worker": "sw.js" },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "web_accessible_resources": [
+    { "resources": ["bridge.html", "bridge.js"], "matches": ["https://*/*"], "use_dynamic_url": true }
+  ]
+}

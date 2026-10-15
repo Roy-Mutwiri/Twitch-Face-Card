@@ -1,0 +1,2451 @@
+{
+ "rows": [
+  {
+   "t": 1.9,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.98,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 28.3,
+   "uniq_fps": 28.3,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 2.4,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.4,
+   "uniq_fps": 26.4,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 2.9,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.2,
+   "uniq_fps": 26.2,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 3.4,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.8,
+   "uniq_fps": 26.8,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 3.9,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.8,
+   "uniq_fps": 26.8,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 4.4,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.3,
+   "uniq_fps": 27.3,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 4.91,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.7,
+   "uniq_fps": 26.7,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 5.41,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.6,
+   "uniq_fps": 26.6,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 5.91,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.5,
+   "uniq_fps": 26.5,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 6.41,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.9,
+   "uniq_fps": 25.4,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 6.91,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 23.8,
+   "uniq_fps": 23.3,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 7.41,
+   "label": "baseline",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 21.2,
+   "uniq_fps": 20.7,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 7.91,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    350,
+    190
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 18.1,
+   "uniq_fps": 17.6,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 8.41,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "CHECKING",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 18.6,
+   "uniq_fps": 18.6,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Stream rendition changed 1280x720 -> 1920x1080"
+  },
+  {
+   "t": 8.91,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "CHECKING",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 21.6,
+   "uniq_fps": 21.6,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Stream rendition changed 1280x720 -> 1920x1080"
+  },
+  {
+   "t": 9.41,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 23.2,
+   "uniq_fps": 23.2,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 9.91,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 25.9,
+   "uniq_fps": 25.9,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 10.41,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 26.3,
+   "uniq_fps": 26.3,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 10.91,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 26.2,
+   "uniq_fps": 26.2,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 11.41,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 27.2,
+   "uniq_fps": 27.2,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 11.91,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 27.6,
+   "uniq_fps": 27.6,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 12.41,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 27.0,
+   "uniq_fps": 27.0,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 12.91,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 27.4,
+   "uniq_fps": 27.4,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 13.42,
+   "label": "rendition 1280x720 -> 1920x1080",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 26.8,
+   "uniq_fps": 26.8,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 13.92,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    624,
+    524,
+    284
+   ],
+   "src_size": "video (1920, 1080)",
+   "cap_fps": 27.2,
+   "uniq_fps": 27.2,
+   "msg": "Stream rendition changed 1280x720 -> 1920x1080",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 14.42,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "CHECKING",
+   "score": 1.0,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.7,
+   "uniq_fps": 26.7,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Stream rendition changed 1920x1080 -> 1280x720"
+  },
+  {
+   "t": 14.92,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "CHECKING",
+   "score": 1.0,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.6,
+   "uniq_fps": 25.6,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Stream rendition changed 1920x1080 -> 1280x720"
+  },
+  {
+   "t": 15.42,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.9,
+   "uniq_fps": 25.9,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 15.92,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 26.3,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 16.42,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.8,
+   "uniq_fps": 26.3,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 16.92,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.98,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.7,
+   "uniq_fps": 27.2,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 17.42,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.6,
+   "uniq_fps": 26.1,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 17.92,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.5,
+   "uniq_fps": 26.5,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 18.42,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.9,
+   "uniq_fps": 25.9,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 18.92,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.3,
+   "uniq_fps": 25.3,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 19.43,
+   "label": "rendition back to 1280x720",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 24.6,
+   "uniq_fps": 24.6,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 19.93,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.5,
+   "uniq_fps": 25.5,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 20.43,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.14,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 23.5,
+   "uniq_fps": 19.5,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 20.93,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.14,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 20.8,
+   "uniq_fps": 12.7,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 21.43,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 19.7,
+   "uniq_fps": 7.1,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 21.93,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 16.7,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 22.43,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 16.1,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 22.93,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 17.3,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 23.43,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 19.5,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 23.93,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 21.5,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 24.43,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 24.8,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 24.93,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.7,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 25.43,
+   "label": "ad break",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.1,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 25.94,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "LOST",
+   "panel": "INVALID",
+   "score": 0.14,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.0,
+   "uniq_fps": 0.0,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 26.44,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.8,
+   "uniq_fps": 20.7,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 26.94,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "INVALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.8,
+   "uniq_fps": 24.4,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area no longer matches (layout/scene changed): showing neutral output \u2014 reselect th"
+  },
+  {
+   "t": 27.44,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 25.6,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 27.94,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.7,
+   "uniq_fps": 25.7,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 28.44,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.1,
+   "uniq_fps": 27.1,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 28.94,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.5,
+   "uniq_fps": 26.5,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 29.44,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.9,
+   "uniq_fps": 25.9,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 29.94,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.3,
+   "uniq_fps": 25.3,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 30.44,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 23.7,
+   "uniq_fps": 23.7,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 30.94,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 24.1,
+   "uniq_fps": 24.1,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 31.44,
+   "label": "ad over",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 24.6,
+   "uniq_fps": 24.6,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 31.95,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.1,
+   "uniq_fps": 25.1,
+   "msg": "Stream rendition changed 1920x1080 -> 1280x720",
+   "event": "Webcam area confirmed (score 0.99)"
+  },
+  {
+   "t": 32.45,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "CHECKING",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.4,
+   "uniq_fps": 25.9,
+   "msg": "Video element replaced by the page",
+   "event": "Video element replaced by the page"
+  },
+  {
+   "t": 32.95,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "CHECKING",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.8,
+   "uniq_fps": 25.3,
+   "msg": "Video element replaced by the page",
+   "event": "Video element replaced by the page"
+  },
+  {
+   "t": 33.45,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.2,
+   "uniq_fps": 25.7,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 33.95,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.5,
+   "uniq_fps": 27.0,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 34.45,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.1,
+   "uniq_fps": 26.1,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 34.95,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.4,
+   "uniq_fps": 26.4,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 35.45,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.4,
+   "uniq_fps": 26.4,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 35.95,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 26.3,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 36.45,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.2,
+   "uniq_fps": 27.2,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 36.95,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.6,
+   "uniq_fps": 26.6,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 37.45,
+   "label": "video element replaced",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.98,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.1,
+   "uniq_fps": 27.1,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 37.98,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "GEOMETRY_CHANGED",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.5,
+   "uniq_fps": 27.0,
+   "msg": "Video element replaced by the page",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 38.48,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 20.3,
+   "uniq_fps": 19.8,
+   "msg": "Tab hidden: Edge throttles video frames in background tabs",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 38.99,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 13.7,
+   "uniq_fps": 13.2,
+   "msg": "Tab hidden: Edge throttles video frames in background tabs",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 39.49,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 6.6,
+   "uniq_fps": 6.1,
+   "msg": "Tab hidden: Edge throttles video frames in background tabs",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 39.99,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Tab hidden: Edge throttles video frames in background tabs",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 40.49,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No video frames for 2310 ms",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 40.99,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No video frames for 2310 ms",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 41.49,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No video frames for 3307 ms",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 41.99,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No video frames for 3307 ms",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 42.49,
+   "label": "another tab selected (Twitch tab hidden)",
+   "source": "STALLED",
+   "track": "LOST",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "No video frames for 4305 ms",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 43.01,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 43.51,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.6,
+   "uniq_fps": 25.6,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 44.01,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.98,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.8,
+   "uniq_fps": 26.8,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 44.51,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.5,
+   "uniq_fps": 26.5,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 45.01,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.9,
+   "uniq_fps": 26.9,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 45.51,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 26.3,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 46.02,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.2,
+   "uniq_fps": 25.2,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 46.52,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.7,
+   "uniq_fps": 25.7,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 47.02,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.98,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 25.6,
+   "uniq_fps": 25.6,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 47.52,
+   "label": "tab selected again",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.0,
+   "uniq_fps": 26.0,
+   "msg": "Receiving native video frames",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 48.02,
+   "label": "FaceFrame bridge server stopped",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 26.3,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 48.52,
+   "label": "FaceFrame bridge server stopped",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 19.6,
+   "uniq_fps": 19.6,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 49.02,
+   "label": "FaceFrame bridge server stopped",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 12.8,
+   "uniq_fps": 12.8,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 49.52,
+   "label": "FaceFrame bridge server stopped",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 5.6,
+   "uniq_fps": 5.6,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 50.02,
+   "label": "FaceFrame bridge server stopped",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 50.52,
+   "label": "FaceFrame bridge server stopped",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 51.02,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 51.52,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 52.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension disconnected (tab closed, navigated, reloaded or stopped)",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 52.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 16.2,
+   "uniq_fps": 16.2,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 53.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 20.4,
+   "uniq_fps": 20.4,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 53.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 22.3,
+   "uniq_fps": 22.3,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 54.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 23.3,
+   "uniq_fps": 23.3,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 54.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 25.7,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 55.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.7,
+   "uniq_fps": 27.2,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 55.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.6,
+   "uniq_fps": 27.1,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 56.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.1,
+   "uniq_fps": 26.6,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 56.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.5,
+   "uniq_fps": 27.5,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 57.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.4,
+   "uniq_fps": 26.4,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 57.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.3,
+   "uniq_fps": 26.3,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 58.03,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 1.0,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.2,
+   "uniq_fps": 27.2,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 58.53,
+   "label": "bridge server restarted (auto-reconnect)",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 26.6,
+   "uniq_fps": 26.6,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 59.03,
+   "label": "video element removed",
+   "source": "RUNNING",
+   "track": "TRACKING",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": false,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 27.0,
+   "uniq_fps": 27.0,
+   "msg": "Extension connected",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 59.53,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 20.3,
+   "uniq_fps": 20.3,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 60.03,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 13.2,
+   "uniq_fps": 13.2,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 60.54,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 6.6,
+   "uniq_fps": 6.6,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 61.04,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 61.54,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 62.04,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  },
+  {
+   "t": 62.54,
+   "label": "video element removed",
+   "source": "CLOSED",
+   "track": "SOURCE_UNAVAILABLE",
+   "panel": "VALID",
+   "score": 0.99,
+   "neutral": true,
+   "panel_rect": [
+    0,
+    416,
+    348,
+    188
+   ],
+   "src_size": "video (1280, 720)",
+   "cap_fps": 0.0,
+   "uniq_fps": 0.0,
+   "msg": "Extension: element-lost",
+   "event": "Webcam area confirmed (score 1.00)"
+  }
+ ],
+ "notes": [
+  "connected True; selected face Rect(x=92.90336608886719, y=9.894691467285156, w=50.45638656616211, h=65.7690200805664); meta path=canvas pathError=Error: unsupported VideoFrame format BGRA",
+  "conversion: RGBA8 (browser-converted)",
+  "panel after rendition switch: Rect(x=0, y=624, w=524, h=284)",
+  "reconnected: True",
+  "native stats: {\"native_frames\": 1232, \"present_to_receive_p50\": 3.595796, \"present_to_receive_p95\": 8.88694, \"readback_p50\": 1.899999976158142, \"readback_p95\": 2.799999952316284, \"rx_fps\": 0.0, \"rx_MBps\": null, \"clock_calibrated\": true, \"clock_rtt_ms\": 0.2255, \"dropped_old_geometry\": 0, \"malformed\": 0, \"rejected_handshakes\": 0, \"rejected_tokens\": 0}"
+ ]
+}

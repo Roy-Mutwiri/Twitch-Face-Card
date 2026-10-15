@@ -1,0 +1,72 @@
+{
+ "source_state": "RUNNING",
+ "source_msg": "Capturing",
+ "source_recovery": "",
+ "track_state": "TRACKING",
+ "panel_validity": "VALID",
+ "panel_score": 0.7440910483379273,
+ "panel_event": "Webcam area confirmed (score 1.00)",
+ "candidates": 1,
+ "capture_fps": 52.52803683969542,
+ "unique_source_fps": 52.52893030851085,
+ "process_fps": 29.950251110071743,
+ "detect_hz": 11.540552346882873,
+ "detect_ms": 2.7473965383866674,
+ "process_ms": 8.670034337107607,
+ "latency_p50": 19.9738,
+ "latency_p95": 30.7864,
+ "latency_p99": 60.2584,
+ "queue_age_p50": 11.1907,
+ "queue_age_p95": 21.3455,
+ "latency_clock": "host-perf-ns",
+ "dropped_process": 255,
+ "dropped_detect": 322,
+ "stale_detections": 0,
+ "panel_px": [
+  333,
+  183
+ ],
+ "source_size": [
+  1630,
+  1197
+ ],
+ "video_size": null,
+ "source_kind": "wgc-rendered-window",
+ "crop_px": [
+  320,
+  180
+ ],
+ "out_px": [
+  1280,
+  720
+ ],
+ "drawn_px": [
+  1280,
+  720
+ ],
+ "scale": 4.0,
+ "mode_used": "fast",
+ "mode_reason": "",
+ "warning": "Small source crop (320x180) enlarged 4.0x; enlargement cannot recover detail that was never transmitted",
+ "sr_ms": 0.0,
+ "flicker_ratio": null,
+ "fallback": "",
+ "output_unique_fps": 29.630321561894064,
+ "output_uniques": 305,
+ "output_poll_repeats": 331,
+ "client_px": [
+  1280,
+  720
+ ],
+ "size_ok": true,
+ "minimized": false,
+ "paint_latency_p50": 27.4579,
+ "paint_latency_p95": 42.8718,
+ "paint_latency_p99": 91.8094,
+ "log": [
+  "WGC source (20) \u304a\u306f\u3088\u3046\u3054\u3056\u3044\u307e\u3059\u300215\u6642\u3050\u3089\u3044\u307e\u3067 - Twitch - Profile 1 - Microsoft\u200b Edge",
+  "panel applied",
+  "output started"
+ ],
+ "elapsed": 13.994871139526367
+}

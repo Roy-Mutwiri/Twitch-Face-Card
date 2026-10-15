@@ -1,0 +1,18 @@
+# FaceFrame runtime dependencies (pinned, tested). PyTorch is installed separately by
+# bootstrap.ps1 from the CUDA index that matches the PC's NVIDIA driver.
+av==19.0.1
+comtypes==1.4.17
+numpy==2.5.4
+nvidia-ml-py==13.615.71
+opencv-python==5.0.0.93
+packaging==26.3
+psutil==7.2.2
+pycaw==20260927
+pyside6-essentials==6.12.0
+shiboken6==6.12.0
+qtawesome==1.4.2
+qtpy==2.4.3
+sounddevice==0.5.6
+streamlink==8.6.2
+websockets==17.2
+windows-capture==2.0.1
