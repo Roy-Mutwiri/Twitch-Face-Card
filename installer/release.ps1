@@ -12,30 +12,34 @@
 param(
     [Parameter(Mandatory = $true)][string]$Version,
     [string]$Notes = "Bug fixes and improvements.",
-    [switch]$SkipTests
+    [switch]$SkipTests,
+    [switch]$SkipBuild       # publish dist\FaceFrame-Setup-<ver>.exe that was already built and tested
 )
 $ErrorActionPreference = "Stop"
 $root = Split-Path $PSScriptRoot -Parent
 Set-Location $root
 if ($Version -notmatch '^\d+\.\d+\.\d+$') { throw "Version must look like 1.2.1" }
 $py = Join-Path $root ".venv\Scripts\python.exe"
-$current = (& $py -c "import faceframe; print(faceframe.__version__)").Trim()
-$newer = & $py -c "from faceframe.updater import is_newer; print(is_newer('$Version', '$current'))"
-if ($newer.Trim() -ne "True") { throw "Version $Version must be newer than the current $current (users only get newer versions)" }
+$latest = (gh release view --json tagName --jq .tagName 2>$null)
+if (-not $latest) { $latest = "0.0.0" }
+$newer = & $py -c "from faceframe.updater import is_newer; print(is_newer('$Version', '$latest'))"
+if ($newer.Trim() -ne "True") { throw "Version $Version must be newer than the published $latest (users only get newer versions)" }
 if (git status --porcelain) { Write-Host "Uncommitted changes will be included in this release:" -ForegroundColor Yellow; git status --short }
 
 # 1. version + tests
-(Get-Content faceframe\__init__.py -Raw) -replace '__version__ = "[^"]+"', "__version__ = `"$Version`"" |
-    Set-Content faceframe\__init__.py -NoNewline -Encoding utf8
-(Get-Content installer\FaceFrame.iss -Raw) -replace '#define AppVersion "[^"]+"', "#define AppVersion `"$Version`"" |
-    Set-Content installer\FaceFrame.iss -NoNewline -Encoding utf8
+$utf8 = New-Object System.Text.UTF8Encoding($false)      # no BOM
+foreach ($f in @(@("faceframe\__init__.py", '__version__ = "[^"]+"', "__version__ = `"$Version`""),
+                 @("installer\FaceFrame.iss", '#define AppVersion "[^"]+"', "#define AppVersion `"$Version`""))) {
+    $path = Join-Path $root $f[0]
+    [IO.File]::WriteAllText($path, ([IO.File]::ReadAllText($path) -replace $f[1], $f[2]), $utf8)
+}
 if (-not $SkipTests) {
     & $py -m pytest -q -p no:warnings
     if ($LASTEXITCODE -ne 0) { throw "tests failed - nothing was published" }
 }
 
 # 2. build
-& powershell -NoProfile -ExecutionPolicy Bypass -File installer\build_installer.ps1
+if (-not $SkipBuild) { & powershell -NoProfile -ExecutionPolicy Bypass -File installer\build_installer.ps1 }
 $exe = Join-Path $root "dist\FaceFrame-Setup-$Version.exe"
 if (-not (Test-Path $exe)) { throw "installer was not built" }
 

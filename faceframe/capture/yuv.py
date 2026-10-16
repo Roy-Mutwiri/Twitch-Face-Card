@@ -42,9 +42,10 @@ def yuv420_to_bgr(y: np.ndarray, u: np.ndarray, v: np.ndarray, matrix: str = "bt
     # chroma 4:2:0 -> full resolution (bilinear; siting differences are sub-sample)
     uf = cv2.resize(u, (w, h), interpolation=cv2.INTER_LINEAR)
     vf = cv2.resize(v, (w, h), interpolation=cv2.INTER_LINEAR)
-    yuv = cv2.merge([np.ascontiguousarray(y), uf, vf]).astype(np.float32)
-    out = cv2.transform(yuv, _MATS[key])
-    return np.clip(out + 0.5, 0, 255).astype(np.uint8)
+    yuv = cv2.merge([np.ascontiguousarray(y), uf, vf])
+    # uint8 in -> uint8 out: OpenCV computes in float and saturates with round-to-nearest
+    # (same result as float32 + clip + round, without two full-frame float passes)
+    return cv2.transform(yuv, _MATS[key])
 
 
 def i420_to_bgr(buf: memoryview | bytes, w: int, h: int, matrix: str, full_range: bool) -> np.ndarray:

@@ -41,9 +41,29 @@ Tick *"Skip the GPU AI runtime"* in the installer for a small install without AI
 6. In **TikTok LIVE Studio**: **Add source → Window capture → FaceFrame Output**. Leave *Capture cursor* off,
    place it at 100 % size, don't stretch it, and **Lock** it.
 
+### Small or busy PCs
+
+Nothing to set up. FaceFrame measures the PC on first start (about 2 s) and picks a **level**:
+
+| Level | What it does | Typical PC |
+|---|---|---|
+| Ultra | GPU AI enhancement + multi-frame fusion | NVIDIA RTX, 6 GB+ |
+| High | GPU AI enhancement | smaller NVIDIA GPU |
+| Balanced | multi-frame fusion + Lanczos | 8+ thread CPU, no NVIDIA GPU |
+| Light | bicubic + light sharpening, full 1080p stream | 2–4 core laptops |
+| Saver | as Light, stream at 720p | slow 2-core PCs, or a PC busy with other work |
+| Minimal | as Saver, stream at 480p | very old PCs |
+
+While FaceFrame runs, it steps **down** a level within seconds if the output falls behind, and back **up**
+after about 45 s of spare capacity. You'll see a short note when that happens. The output always stays at your
+size and frame rate. **Quality → Performance** shows your PC, the current level and *Re-check PC*. Turn
+*Automatic* off to pick a fixed level or use your own Quality settings.
+
 ### Past broadcasts (VODs)
 Twitch's **Share → Copy link at current time** gives a link like `…/videos/123?t=1h8m33s`; FaceFrame starts there.
 The player bar shows `position / length` and the remaining time.
+
+**Jump to a time:** Source page → *Jump to time* → type hours, minutes and seconds → **Go** (or Enter). The clock button in the player bar opens it with the current time filled in. It takes a few seconds and lands within about half a second of the requested time.
 
 ---
 

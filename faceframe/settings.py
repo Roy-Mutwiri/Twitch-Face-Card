@@ -85,6 +85,13 @@ class AudioConfig:
 
 
 @dataclass
+class PerformanceConfig:
+    auto: bool = True                   # adapt the quality tier to this PC (probe + live governor)
+    tier: str = ""                      # last tier in use (auto) or the user's fixed tier
+    spec: dict = field(default_factory=dict)   # cached hardware probe + benchmark
+
+
+@dataclass
 class BridgeConfig:
     port: int = 47811
     token: str = ""
@@ -99,6 +106,7 @@ class AppSettings:
     source: SourceHint = field(default_factory=SourceHint)
     bridge: BridgeConfig = field(default_factory=BridgeConfig)
     audio: AudioConfig = field(default_factory=AudioConfig)
+    performance: PerformanceConfig = field(default_factory=PerformanceConfig)
     models_dir: str = ""
 
     # ------------------------------------------------------------- validation
@@ -134,6 +142,10 @@ class AppSettings:
         a = self.audio
         fix(isinstance(a.volume, (int, float)) and 0.0 <= a.volume <= 1.5, "audio volume",
             lambda: setattr(a, "volume", 1.0))
+        pf = self.performance
+        fix(isinstance(pf.auto, bool), "performance auto", lambda: setattr(pf, "auto", True))
+        fix(isinstance(pf.spec, dict), "performance spec", lambda: setattr(pf, "spec", {}))
+        fix(isinstance(pf.tier, str), "performance tier", lambda: setattr(pf, "tier", ""))
         b = self.bridge
         fix(isinstance(b.port, int) and 1024 <= b.port <= 65535, "bridge port", lambda: setattr(b, "port", 47811))
         if not b.token or len(b.token) < 32:
@@ -154,7 +166,8 @@ class AppSettings:
     def from_dict(cls, d: dict) -> "AppSettings":
         s = cls()
         for sub_name, sub_cls in (("framing", FramingSettings), ("quality", QualityConfig), ("output", OutputConfig),
-                                  ("source", SourceHint), ("bridge", BridgeConfig), ("audio", AudioConfig)):
+                                  ("source", SourceHint), ("bridge", BridgeConfig), ("audio", AudioConfig),
+                                  ("performance", PerformanceConfig)):
             raw = d.get(sub_name) or {}
             if not isinstance(raw, dict):
                 continue

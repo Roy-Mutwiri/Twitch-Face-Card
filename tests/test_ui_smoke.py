@@ -10,6 +10,7 @@ def test_control_window_constructs_and_closes(tmp_path, monkeypatch):
     app = QApplication.instance() or QApplication([])
     s, p = sm.load(tmp_path / "s.json")
     s.bridge.port = 47897
+    s.performance.auto = False                 # manual: the preset forces the GPU chain
     w = appmod.ControlWindow(s, p)
     w._best_preset()
     assert w.chk_temporal.isChecked() and w.s.quality.temporal and w.pipeline.cfg.temporal
@@ -74,4 +75,28 @@ def test_layout_fits_small_laptop_screens(tmp_path, monkeypatch):
         sc = w.pages.widget(i)
         need = sc.widget().minimumSizeHint().width()
         assert need <= sc.viewport().width(), (w.nav.item(i).text(), need, sc.viewport().width())
+    w.close()
+
+
+def test_auto_performance_applies_level_and_manual_change_turns_it_off(tmp_path, monkeypatch):
+    from PySide6.QtWidgets import QApplication
+    from faceframe import settings as sm
+    from faceframe.core import autotune as A
+    from faceframe.ui import app as appmod
+    monkeypatch.setattr(sm, "settings_dir", lambda: tmp_path)
+    monkeypatch.setattr(A, "probe", lambda *a, **k: A.SystemSpec(cpu="test", cores=1, threads=2, ram_gb=4,
+                                                                 ms_balanced=40, ms_light=3, ms_detect=12))
+    app = QApplication.instance() or QApplication([])
+    s, p = sm.load(tmp_path / "s.json")
+    s.bridge.port = 47894
+    w = appmod.ControlWindow(s, p)
+    w.perf._on_probed(A.probe(), "")           # what the probe thread delivers
+    assert A.TIERS[w.perf.current].name == "Light"            # 2 threads, light 3+4 ms -> Light
+    assert w.s.quality.mode == "fast" and not w.chk_temporal.isChecked()
+    assert w.pipeline.cfg.quality.light and w.pipeline.cfg.detect_hz == 8
+    assert w.timer.interval() == 66
+    w._best_preset()                            # Automatic: best *sustainable* level, not GPU
+    assert w.s.quality.mode == "fast" and w.perf.auto
+    w.chk_temporal.setChecked(True)             # a manual change hands control back to the user
+    assert not w.perf.auto and not w.s.performance.auto
     w.close()

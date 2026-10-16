@@ -1,4 +1,4 @@
-﻿FaceFrame 1.2.0
+﻿FaceFrame 1.3.0
 
 FaceFrame follows the streamer's face in a Twitch stream's webcam corner and gives TikTok LIVE Studio a clean, framed, sharpened picture - with the stream's sound in sync.
 

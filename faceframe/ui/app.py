@@ -26,7 +26,7 @@ from .. import __version__, settings as settings_mod  # noqa: E402
 from ..capture import windows as win  # noqa: E402
 from ..capture.audio import AudioOutput, output_devices  # noqa: E402
 from ..capture.bridge import BridgeServer, BridgeSource  # noqa: E402
-from ..capture.direct import DirectStreamSource, list_qualities, normalize_target  # noqa: E402
+from ..capture.direct import DirectStreamSource, list_qualities, normalize_target, parse_hms  # noqa: E402
 from ..capture.wgc import SourceRefused, WgcSource  # noqa: E402
 from ..core.enhance import QualityMode, QualitySettings  # noqa: E402
 from ..core.geometry import Rect, from_normalized, to_normalized  # noqa: E402
@@ -38,6 +38,7 @@ from . import theme as T  # noqa: E402
 from .image_view import ImageView, Overlay  # noqa: E402
 from .output_window import OUTPUT_TITLE, OutputWindow  # noqa: E402
 from .source_picker import SourcePickerDialog  # noqa: E402
+from .perf_ui import PerformanceController  # noqa: E402
 from .update_ui import UpdateController  # noqa: E402
 
 log = logging.getLogger("faceframe.app")
@@ -111,6 +112,8 @@ class ControlWindow(QMainWindow):
         self._compare_frozen = None
         self._auto_offer_done = False
         self.engineLoaded.connect(self._on_engine_loaded)
+        self._applying_tier = False
+        self.perf = PerformanceController(self)
         self._build_ui()
         self._load_into_ui()
         if problems:
@@ -122,6 +125,7 @@ class ControlWindow(QMainWindow):
         self._save_timer.setSingleShot(True)
         self._save_timer.timeout.connect(self.save_settings)
         self._offer_resume()
+        self.perf.start()               # probe this PC (cached), pick the quality level, then adapt live
         # updates: checked in the background a few seconds after start; "Skip" asks again next start
         self.updates = UpdateController(self)
         if UpdateController.enabled():
@@ -327,6 +331,10 @@ class ControlWindow(QMainWindow):
         tcol.addWidget(self.time_lbl)
         tcol.addWidget(self.remain_lbl)
         tl2.addLayout(tcol)
+        self.btn_goto = self._btn("", "clock-fast", "ghost")
+        self.btn_goto.setToolTip("Jump to a time (past broadcasts)")
+        self.btn_goto.clicked.connect(self._focus_jump)
+        tl2.addWidget(self.btn_goto)
         tl2.addStretch(1)
         self.chk_mute = self._btn("", "volume-high", "ghost")
         self.chk_mute.setCheckable(True)
@@ -424,6 +432,27 @@ class ControlWindow(QMainWindow):
         r.addWidget(self.spn_delay)
         r.addStretch(1)
         cb.addLayout(r)
+        v.addWidget(card)
+
+        card, cb = self._card("Jump to time", "Past broadcasts (VOD links): type the hour, minute and second, "
+                              "then press Go or Enter.", "clock-fast")
+        self.jump_card = card
+        r = QHBoxLayout()
+        self.spn_jh, self.spn_jm, self.spn_js = QSpinBox(), QSpinBox(), QSpinBox()
+        for sp, mx, suf in ((self.spn_jh, 99, " h"), (self.spn_jm, 59, " m"), (self.spn_js, 59, " s")):
+            sp.setRange(0, mx)
+            sp.setSuffix(suf)
+            sp.setMinimumWidth(64)
+            sp.lineEdit().returnPressed.connect(self._jump)
+            r.addWidget(sp, 1)
+        self.btn_jump = self._btn("Go", "skip-next-circle-outline", "primary")
+        self.btn_jump.clicked.connect(self._jump)
+        r.addWidget(self.btn_jump)
+        cb.addLayout(r)
+        self.jump_hint = QLabel("Load a past broadcast (twitch.tv/videos/…) to use this.")
+        self.jump_hint.setObjectName("cardHint")
+        self.jump_hint.setWordWrap(True)
+        cb.addWidget(self.jump_hint)
         v.addWidget(card)
 
         card, cb = self._card("Other capture methods", "Use these if you prefer to capture the Edge player itself.",
@@ -568,6 +597,7 @@ class ControlWindow(QMainWindow):
 
         # ---- Quality page
         page, v = self._page("Quality", "Twitch's pixels can't be exceeded — this gets the most out of them.")
+        v.addWidget(self.perf.build_card())
         self.btn_best = self._btn("  Best quality preset", "star-four-points", "hero")
         self.btn_best.setToolTip("Multi-frame fusion + GPU enhancement (Real-ESRGAN x4v3, 0.7) + Lanczos. "
                                  "Best measured on the 1080p direct stream.")
@@ -797,7 +827,7 @@ class ControlWindow(QMainWindow):
         self.sld_sharp.valueChanged.connect(lambda v: self._set_q("sharpen", v / 100))
         self.sld_strength.valueChanged.connect(lambda v: self._set_q("enhance_strength", v / 100))
         self.cmb_model.currentIndexChanged.connect(self._on_model)
-        self.cmb_interp.currentIndexChanged.connect(lambda _: self._set_q("interpolation", self.cmb_interp.currentData()))
+        self.cmb_interp.currentIndexChanged.connect(self._on_interp)
         self.cmb_size.currentIndexChanged.connect(self._on_size_preset)
         self.cmb_aspect.currentIndexChanged.connect(self._on_aspect)
         self.cmb_fps.currentIndexChanged.connect(self._on_fps)
@@ -924,6 +954,7 @@ class ControlWindow(QMainWindow):
         self.edit_direct.setText(target)
         src = DirectStreamSource(target, quality, self.spn_delay.value())
         src.max_fps = float(self.s.output.fps)      # don't convert frames the output would drop
+        self.perf.configure_source(src)
         self.pipeline.set_source(src)
         same = h.kind == "direct" and h.direct_target == target
         h.kind, h.direct_target, h.direct_quality = "direct", target, quality
@@ -1019,11 +1050,19 @@ class ControlWindow(QMainWindow):
 
     def _update_playback(self) -> None:
         src = self.pipeline.source
+        vod = isinstance(src, DirectStreamSource) and src.is_vod
+        for w in (self.spn_jh, self.spn_jm, self.spn_js, self.btn_jump, self.btn_goto):
+            w.setEnabled(vod)
         if not isinstance(src, DirectStreamSource):
             self.time_lbl.setText("--:--:-- / --:--:--")
             self.remain_lbl.setText("for Twitch links")
             self.btn_pause.setEnabled(False)
+            self.jump_hint.setText("Load a past broadcast (twitch.tv/videos/…) to use this.")
             return
+        if vod and src.duration_s:
+            self.jump_hint.setText(f"Video length {self._hms(src.duration_s)}. Live streams can't jump.")
+        elif not vod:
+            self.jump_hint.setText("This is a live stream: jumping works on past broadcasts (twitch.tv/videos/…).")
         self.btn_pause.setEnabled(True)
         t = src.timing()
         paused = t["paused"]
@@ -1045,6 +1084,41 @@ class ControlWindow(QMainWindow):
                  + (" · muted" if self.s.audio.muted else "")))
         else:
             self.audio_status.setText("FaceFrame audio off (use the Edge tab's sound instead)")
+
+    def _focus_jump(self) -> None:
+        src = self.pipeline.source
+        if isinstance(src, DirectStreamSource) and src.is_vod:
+            pos = int(src.timing().get("position") or 0)
+            self.spn_jh.setValue(pos // 3600)
+            self.spn_jm.setValue(pos % 3600 // 60)
+            self.spn_js.setValue(pos % 60)
+        self.nav.setCurrentRow(0)
+        self.spn_jh.setFocus()
+        self.spn_jh.selectAll()
+
+    def _jump(self) -> None:
+        src = self.pipeline.source
+        if not (isinstance(src, DirectStreamSource) and src.is_vod):
+            self.notice("Jumping works on past broadcasts (twitch.tv/videos/… links).", warn=True)
+            return
+        pos = self.spn_jh.value() * 3600 + self.spn_jm.value() * 60 + self.spn_js.value()
+        if src.duration_s and pos >= src.duration_s:
+            self.notice(f"That is past the end of the video ({self._hms(src.duration_s)}).", warn=True)
+            return
+        if src.seek(pos):
+            self.notice(f"Jumping to {self._hms(pos)} … (takes a few seconds)")
+
+    def jump_to(self, text: str) -> bool:
+        """'1:02:03' / '1h2m3s' style input (also used by tests)."""
+        sec = parse_hms(text)
+        if sec is None:
+            return False
+        sec = int(sec)
+        self.spn_jh.setValue(min(99, sec // 3600))
+        self.spn_jm.setValue(sec % 3600 // 60)
+        self.spn_js.setValue(sec % 60)
+        self._jump()
+        return True
 
     def _on_delay(self, v: float) -> None:
         self.s.source.direct_delay = v
@@ -1206,6 +1280,8 @@ class ControlWindow(QMainWindow):
         if not checked:
             return
         mode = ["original", "fast", "enhanced"][bid]
+        if not self._applying_tier and mode != self.s.quality.mode:
+            self.perf.user_override("the quality mode")
         self.s.quality.mode = mode
         self.pipeline.cfg.quality.mode = QualityMode(mode)
         if mode == "enhanced":
@@ -1214,12 +1290,38 @@ class ControlWindow(QMainWindow):
         self._save_timer.start(800)
 
     def _on_temporal(self, on: bool) -> None:
+        if not self._applying_tier and on != self.s.quality.temporal:
+            self.perf.user_override("multi-frame fusion")
         self.s.quality.temporal = on
         self.pipeline.update_config(temporal=on, temporal_strength=self.s.quality.temporal_strength)
         self._save_timer.start(800)
 
+    def _on_interp(self, *_):
+        if not self._applying_tier:
+            self.perf.user_override("the resize filter")
+        self._set_q("interpolation", self.cmb_interp.currentData())
+
+    def _apply_tier(self, t) -> None:
+        """Performance level -> Quality controls + pipeline + stream cap + preview rate."""
+        self._applying_tier = True
+        try:
+            self.mode_group.button(2 if t.mode == "enhanced" else 1).setChecked(True)
+            self.chk_temporal.setChecked(t.temporal)
+            self.cmb_interp.setCurrentIndex(max(0, self.cmb_interp.findData(t.interpolation)))
+            self.pipeline.cfg.quality.light = t.light
+            self.pipeline.update_config(detect_hz=t.detect_hz)
+            src = self.pipeline.source
+            if isinstance(src, DirectStreamSource):
+                src.set_max_height(t.max_height)
+            self.timer.setInterval(max(33, int(1000 / t.preview_hz)))
+        finally:
+            self._applying_tier = False
+
     def _best_preset(self) -> None:
         """Best measured combination on the direct 1080p stream (evidence/quality_direct)."""
+        if self.perf.auto:
+            self.perf.best()
+            return
         self.cmb_model.setCurrentIndex(max(0, self.cmb_model.findData("realesr-general-x4v3")))
         self.cmb_interp.setCurrentIndex(max(0, self.cmb_interp.findData("lanczos")))
         self.sld_strength.setValue(70)

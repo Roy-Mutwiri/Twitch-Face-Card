@@ -40,6 +40,8 @@
 | 🔊 **Sound in sync** | Plays the stream's audio lip-synced to the picture. It appears as **FaceFrame** in the Windows Volume Mixer and can go to any output device (for example VB-Cable for LIVE Studio). |
 | ⏯️ **Player bar** | Pause/resume, volume, mute, position / length / remaining time for past broadcasts, and time watched for live streams. |
 | 🪟 **Clean output** | A pixel-exact **FaceFrame Output** window for LIVE Studio's *Window capture*, with no buttons or borders, plus a test pattern that proves LIVE Studio isn't rescaling it. |
+| ⚙️ **Runs on any PC** | Reads your PC's processor, memory and graphics card, picks the best quality it can run smoothly, and keeps adjusting while it runs, so small PCs don't lag. |
+| ⏩ **Jump to time** | For past broadcasts: type hours, minutes and seconds and press Go. |
 | 🛡️ **Safe by design** | Doesn't touch Edge, Twitch, LIVE Studio, cookies or system codecs. Everything runs on your PC. |
 
 ## Install
@@ -140,7 +142,8 @@ Building the installer needs [Inno Setup 6](https://jrsoftware.org/isinfo.php) a
 ### Publishing an update
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File installerelease.ps1 -Version 1.2.1 -Notes "What changed"
+powershell -ExecutionPolicy Bypass -File installer
+elease.ps1 -Version 1.2.1 -Notes "What changed"
 ```
 
 This sets the version, runs the tests, builds the installer, pushes and creates the GitHub release with

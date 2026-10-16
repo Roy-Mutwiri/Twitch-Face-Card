@@ -43,6 +43,7 @@ class QualitySettings:
     sr_budget_ms: float = 45.0        # sustained SR time above this -> fallback
     auto_fallback: bool = True
     max_flicker_ratio: float = 1.6    # Enhanced frame-to-frame change vs Fast; above -> Fast
+    light: bool = False               # low-power PCs: sharpen at source size before the resize (~10x cheaper)
 
 
 @dataclass
@@ -90,9 +91,11 @@ def resize_once(img: np.ndarray, w: int, h: int, pref: str = "cubic") -> np.ndar
 
 
 def place_on_canvas(img: np.ndarray, out_w: int, out_h: int, x: int, y: int) -> np.ndarray:
+    h, w = img.shape[:2]
+    if (w, h) == (out_w, out_h) and x == 0 and y == 0 and img.flags.c_contiguous:
+        return img          # fills the canvas: no padding, no two full-frame copies
     canvas = np.empty((out_h, out_w, 3), np.uint8)
     canvas[:] = PAD_COLOR
-    h, w = img.shape[:2]
     canvas[y:y + h, x:x + w] = img
     return canvas
 
@@ -163,9 +166,13 @@ class Renderer:
             info.scale = dw / cw
             out = place_on_canvas(img, out_w, out_h, x, y)
         elif mode == QualityMode.FAST:
-            img = resize_once(crop, dw, dh, q.interpolation)
-            if q.sharpen > 0 and dw > cw:
-                img = unsharp(img, amount=0.9 * q.sharpen, sigma=max(0.6, 0.5 * dw / cw))
+            if q.light and q.sharpen > 0 and dw > cw:
+                src = unsharp(np.ascontiguousarray(crop), amount=0.9 * q.sharpen, sigma=0.7)
+                img = resize_once(src, dw, dh, q.interpolation)
+            else:
+                img = resize_once(crop, dw, dh, q.interpolation)
+                if q.sharpen > 0 and dw > cw:
+                    img = unsharp(img, amount=0.9 * q.sharpen, sigma=max(0.6, 0.5 * dw / cw))
             out = place_on_canvas(img, out_w, out_h, x, y)
         else:
             out = self._render_enhanced(crop, dw, dh, x, y, out_w, out_h, q, info, probe_stability)

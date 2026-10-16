@@ -145,6 +145,7 @@ QPushButton[kind="primary"] {{ background: {ACCENT}; border: 1px solid {ACCENT_H
 QPushButton[kind="primary"]:hover {{ background: {ACCENT_HI}; }}
 QPushButton[kind="primary"]:pressed {{ background: {ACCENT_LO}; }}
 QPushButton[kind="primary"]:checked {{ background: {ERR}; border-color: #f87171; }}
+QPushButton[kind="primary"]:disabled {{ background: {CARD_HI}; border-color: {BORDER}; color: {FAINT}; }}
 QPushButton[kind="hero"] {{ background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #8B5CF6, stop:1 #3B82F6);
                            border: none; color: white; font-weight: 700; padding: 10px 14px; border-radius: 10px; }}
 QPushButton[kind="hero"]:hover {{ background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #9d75ff, stop:1 #5b9bff); }}

@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.3.0 — 2026-10-15
+**Runs well on small PCs: automatic performance**
+- FaceFrame reads the PC's processor, cores, memory and NVIDIA GPU, runs a ~1 s benchmark of its own per-frame
+  work, and picks the highest quality level the PC can sustain: *Ultra, High* (GPU AI), *Balanced, Light, Saver
+  (720p), Minimal (480p)*.
+- While it runs, a governor watches the real output. If frames fall behind, the decoder drops frames, or
+  FaceFrame saturates the CPU, it steps down one level within seconds. With sustained headroom it steps back up.
+  Load from other programs alone (for example TikTok LIVE Studio's encoder) never pushes it below Saver.
+- Quality → Performance: *Automatic* (default), this PC's specs, the current level, a fixed-level choice and
+  *Re-check PC*. A manual Quality change hands control back to you.
+- Faster for everyone, with no quality loss: the YUV conversion works in 8-bit directly, full-canvas frames are
+  no longer copied twice, and the light levels sharpen at source size. Measured on an emulated 2-core PC: 22 fps at 56 % CPU →
+  29 fps at 26 % CPU.
+
+**Jump to time** for past broadcasts: type the hours, minutes and seconds (Source page or the player-bar button)
+and press Go. Lands within about 0.5 s of the requested second.
+
+**Fixes**
+- Changing stream resolution keeps the webcam area (rescaled), and VOD reconnects continue where they were.
+
 ## 1.2.0 — 2026-10-15
 - **In-app updates.** When a new version is published, FaceFrame shows an *Update now / Skip* window at start.
   *Update now* downloads the installer, verifies its SHA-256, closes FaceFrame, updates it in place (settings kept)

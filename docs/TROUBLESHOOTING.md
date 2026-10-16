@@ -9,6 +9,9 @@ self-test: `%APPDATA%\FaceFrame\selftest.json` (run `FaceFrame.exe --selftest`).
 | Installer says some components could not be installed | No internet during setup, or a download failed. Start menu → **Repair FaceFrame**. |
 | "Enhanced unavailable: no compatible NVIDIA GPU" | No NVIDIA GPU or driver older than 528. FaceFrame uses Fast mode. Update the NVIDIA driver, then **Repair FaceFrame**. |
 | "Enhanced too slow … switched to Fast" | The GPU is busy (games, encoders) or the output is very large. Use **1080 × 720** output, then choose Enhanced again. |
+| FaceFrame lags on a small PC | Quality → Performance → *Automatic* must be on (default). It lowers the level by itself; *Re-check PC* after hardware changes. Close other heavy programs. |
+| Quality changed by itself / "Performance: lowered to …" note | The PC was busy; it goes back up when there is room. To keep one level, turn *Automatic* off and pick a level. |
+| Jump to time is greyed out | It works on past broadcasts (twitch.tv/videos/… links), not live streams. |
 | Picture looks soft | Check the header: *×N from W×H*. Small webcams have few real pixels. Use the Twitch-link source, Best quality, 1080×720 output, **Head and shoulders** framing. |
 | "Twitch stream unavailable … offline" | The channel is offline or the link is wrong. FaceFrame retries automatically. |
 | Webcam area INVALID / neutral output | The stream layout changed or an ad is playing. It recovers by itself when the webcam returns; otherwise **Select webcam area** again. |

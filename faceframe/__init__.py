@@ -9,4 +9,4 @@ faceframe.capture   Sources: Windows Graphics Capture adapter and the
 faceframe.ui        PySide6 control window, selection widgets, clean output window.
 """
 
-__version__ = "1.2.0"
+__version__ = "1.3.0"

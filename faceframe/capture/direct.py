@@ -55,6 +55,48 @@ def list_qualities(target: str) -> list[str]:
     return [q for q in streamlink.Streamlink().streams(url) if q not in ("worst",)]
 
 
+def _height(name: str) -> int:
+    """'1080p60' -> 1080, 'audio_only' -> 0."""
+    try:
+        return int(str(name).split("p")[0])
+    except ValueError:
+        return 0
+
+
+def _rank(name: str) -> tuple[int, int]:
+    try:
+        h, f = name.split("p")
+        return int(h), int(f or 30)
+    except ValueError:
+        return 0, 0
+
+
+def _hms_param(sec: float) -> str:
+    sec = int(max(0, sec))
+    return f"{sec // 3600}h{sec % 3600 // 60}m{sec % 60}s"
+
+
+def parse_hms(text: str) -> float | None:
+    """'1:02:03', '62:03', '1h2m3s', '2m', '3723' -> seconds; None if unreadable."""
+    import re
+    t = (text or "").strip().lower().replace(" ", "")
+    if not t:
+        return None
+    if any(c in t for c in "hms"):
+        m = re.fullmatch(r"(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?", t)
+        if m and any(m.groups()):
+            h, mi, se = (int(x or 0) for x in m.groups())
+            return float(h * 3600 + mi * 60 + se)
+        return None
+    parts = t.split(":")
+    if all(x.isdigit() for x in parts) and 1 <= len(parts) <= 3:
+        v = 0
+        for x in parts:
+            v = v * 60 + int(x)
+        return float(v)
+    return None
+
+
 class DirectStreamSource:
     kind = SourceKind.DIRECT_STREAM
 
@@ -112,6 +154,12 @@ class DirectStreamSource:
         self.added_latency_s = 0.0
         self._last_conv_due = -1e9
         self._announced = False
+        # VOD seeking: position to (re)open at, and decoded video before it is discarded
+        self._seek_s: float | None = None
+        self._seek_pending = False
+        self._skip_until_rel: float = 0.0        # seconds after the first decoded frame
+        # performance: highest rendition height allowed for "best" (None = no cap)
+        self.max_height: int | None = None
 
     # ------------------------------------------------------------- control
     def describe(self) -> dict:
@@ -133,6 +181,41 @@ class DirectStreamSource:
 
     def set_delay(self, s: float) -> None:
         self.delay_s = max(0.0, min(30.0, float(s)))
+
+    def seek(self, position_s: float) -> bool:
+        """VOD only: continue playback at ``position_s`` (seconds from the VOD start)."""
+        if not self.is_vod:
+            return False
+        pos = max(0.0, float(position_s))
+        if self.duration_s:
+            pos = min(pos, max(0.0, self.duration_s - 1.0))
+        now = time.perf_counter()
+        with self._clk_lock:
+            if self._paused_at is not None:          # seeking also resumes
+                self._paused_total += now - self._paused_at
+                self._paused_at = None
+                self.paused = False
+            self._seek_s = pos
+            self._seek_pending = True
+            self._reconnect = True
+        with self._qcond:
+            self._queue.clear()
+            self._qcond.notify_all()
+        log.info("seek to %.1f s", pos)
+        return True
+
+    def set_max_height(self, h: int | None) -> None:
+        """Cap the rendition used for "best" (performance). Reopens the stream when the
+        current rendition no longer matches (VODs continue at the same position)."""
+        h = int(h) if h else None
+        if h == self.max_height:
+            return
+        self.max_height = h
+        cur = _height(self.rendition)
+        if self.quality == "best" and cur and ((h is not None and cur > h) or h is None or cur < h):
+            self._reconnect = True
+            with self._qcond:
+                self._qcond.notify_all()
 
     def start(self, sink: SourceSink) -> None:
         self._sink = sink
@@ -168,7 +251,10 @@ class DirectStreamSource:
         from streamlink.options import Options
         self._status(SourceState.STARTING, f"Resolving {self.url} …")
         session = streamlink.Streamlink()
-        streams = session.streams(self.url, options=Options({"low-latency": not self.is_vod}))
+        url = self.url
+        if self.is_vod and self._seek_s is not None:
+            url = self.url.split("?")[0] + "?t=" + _hms_param(self._seek_s)
+        streams = session.streams(url, options=Options({"low-latency": not self.is_vod}))
         if not streams:
             raise RuntimeError(f"{self.url} is offline or has no public stream")
         names = [n for n in streams if n not in ("audio_only", "worst", "best")]
@@ -176,6 +262,10 @@ class DirectStreamSource:
         if q == "best":
             best_url = streams["best"].url
             q = next((n for n in names if streams[n].url == best_url), "best")
+            if self.max_height and _height(q) > self.max_height:
+                fit = [n for n in names if 0 < _height(n) <= self.max_height]
+                if fit:
+                    q = max(fit, key=_rank)
         self.rendition = q
         if self.is_vod:
             self._vod_timing(session, streams[q])
@@ -241,6 +331,8 @@ class DirectStreamSource:
                     break
                 acc += d
             self.segment_start_s = acc
+            # playback starts at the segment boundary; decoded video before ``off`` is skipped
+            self._skip_until_rel = max(0.0, off - acc)
         except Exception as e:
             log.info("VOD timing unavailable: %s", e)
 
@@ -324,6 +416,8 @@ class DirectStreamSource:
         if self._resampler is None:
             self._resampler = av.AudioResampler(format="flt", layout="stereo", rate=48000)
         pts = float(frame.pts * frame.time_base)
+        if self._first_pts is not None and pts - self._first_pts < self._skip_until_rel - 0.1:
+            return                                       # audio before the requested VOD second
         for rf in self._resampler.resample(frame):
             a = rf.to_ndarray().reshape(-1, 2).astype(np.float32, copy=False)
             with self._clk_lock:
@@ -391,7 +485,13 @@ class DirectStreamSource:
         backoff = 2.0
         while not self._stop.is_set():
             try:
+                if self.is_vod and not self._seek_pending and self._first_pts is not None:
+                    pos = self.timing().get("position")      # reconnect / rendition change: continue here
+                    if pos is not None:
+                        self._seek_s = pos
+                self._seek_pending = False
                 self._reconnect = False
+                self._skip_until_rel = 0.0
                 c, v, names = self._open()
                 self._container = c
                 self._announced = False      # RUNNING is reported on the first frame of every (re)connect
@@ -420,6 +520,8 @@ class DirectStreamSource:
                         now = time.perf_counter()
                         if self._first_pts is None:
                             self._first_pts = pts
+                        if pts - self._first_pts < self._skip_until_rel:
+                            continue                     # before the requested VOD second
                         with self._clk_lock:
                             b = self._base
                             if self._paused_at is None and (
@@ -486,8 +588,14 @@ class DirectStreamSource:
             old = self.video_size
             self.video_size = (w, h)
             if old is not None:
+                with self._lock:
+                    p = self._panel
+                det = {}
+                if p is not None and old[0] > 0:
+                    k = w / old[0]
+                    det["panel"] = Rect(p.x * k, p.y * k, p.w * k, p.h * k)
                 self._status(SourceState.GEOMETRY_CHANGED, f"Rendition size {old[0]}x{old[1]} -> {w}x{h}",
-                             "Re-validating", {})
+                             "Re-validating", det)
         if not self._announced:
             self._announced = True
             self._status(SourceState.RUNNING, f"Decoding {self.rendition} {w}x{h}")

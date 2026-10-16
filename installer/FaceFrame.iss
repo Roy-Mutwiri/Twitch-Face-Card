@@ -1,7 +1,7 @@
 ; FaceFrame installer (Inno Setup 6). Built by installer\build_installer.ps1 from the staged folder.
 #define AppName "FaceFrame"
 #ifndef AppVersion
-  #define AppVersion "1.2.0"
+  #define AppVersion "1.3.0"
 #endif
 #ifndef StageDir
   #define StageDir "..\build\stage"

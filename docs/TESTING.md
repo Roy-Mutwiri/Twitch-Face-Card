@@ -1,4 +1,4 @@
-# Testing & QA report: FaceFrame 1.2.0
+# Testing & QA report: FaceFrame 1.3.0
 
 Release testing on 2026-10-15 (the live QA ran on 1.1.0; 1.2.0 adds in-app updates, tested below). Everything below was **measured**. Failures are listed with their cause and fix,
 not hidden.
@@ -83,6 +83,47 @@ for 30 fps output.
 Live vs past broadcast of the same streamer: both are 1080p60 at about 9 Mbit/s (9.04 vs 8.44), with the same face
 size, so the quality is the same. A soft picture comes from small webcams, Tight framing or very large outputs,
 not from live mode.
+
+## Small-PC performance and jump to time (1.3.0)
+
+A small PC was **emulated** on the test machine: FaceFrame limited to 1–2 CPU cores, GPU hidden, live
+stylishnoob4 (1080p60), 1080×720 output at 30 fps. The test machine's other programs kept those cores about 70 %
+busy, so this is a *busy* small PC. These are emulations, not a real low-end laptop.
+
+**Where the time went** (py-spy, 2 cores): the output resize (Lanczos) and full-size sharpening, two needless full-frame
+copies, the YUV conversion's float pass, and face detection 12×/s. Fixed without quality loss (8-bit YUV
+transform, max 1 level difference on 2.8 % of pixels; no copy when the crop fills the canvas). Light levels use
+cheaper filters.
+
+| Emulated PC | Level | Stream | Output fps (median / min) | CPU of its cores |
+|---|---|---|---|---|
+| 2 cores, before 1.3.0 | Fast | 1080p60 | 22.0 / 19.3 | 56 % |
+| 2 cores | Balanced | 1080p60 | 23.1 / 17.4 | 54 % (too heavy → not chosen) |
+| 2 cores | **Light** (auto-chosen) | 1080p60 | **29.2 / 28.0** | **26 %** |
+| 2 cores | Saver | 720p60 | 29.7 / 28.4 | 13 % |
+| 1 core | Light | 1080p60 | 25.6 / 22.2 | 43 % |
+| 1 core | **Saver** (auto-chosen) | 720p60 | **29.1 / 26.9** | 20 % |
+| 1 core | Minimal | 480p30 | 29.8 / 29.5 | 12 % |
+
+**Governor in the real window** (2 cores, no GPU, live stream, CPU hog with 4 busy processes for 70 s):
+Light was chosen and held **28–30 fps** before, during and after the hog, with 0 decoder drops. Other programs'
+load did not lower the level. Two problems found by this test and fixed:
+1. After the load ended it stepped up on one low CPU reading. Balanced then ran the 2 cores at 88–100 %.
+   Step-up now needs the *average* CPU below 60 %, and sustained saturation caused by FaceFrame steps down.
+2. Saturation caused by other programs pushed it down to 480p. Now it only counts when FaceFrame itself uses
+   ≥ 30 % of the cores, and saturation alone stops at Saver.
+
+With a GPU, Ultra held 29.8–29.9 fps while another process saturated the GPU with FP16 matrix multiplications
+(AI step 12 → ~40 ms latency, still within budget). GPU PCs step Ultra → High → Light: Balanced's CPU fusion
+would move work onto a busy CPU (measured 18 fps).
+
+Seen once in 12 full-power runs: 0 fps while TRACKING for ~55 s without a step-down. It didn't reproduce in 11
+more runs (including under GPU load). It is consistent with the webcam area's safety freeze after a stream layout
+change. The governor now logs any such stall with the area state.
+
+**Jump to time** (real window, VOD 18 h 21 min long): typed 1 h 2 m 3 s → Go → playing at 1:02:03. Seeks to 1:02:03,
+10:00 and 1:23:20.5 landed within **0.4 s**, taking 10–15 s each (Twitch resolve + open). Seeking while paused also resumes.
+Past-the-end times are refused, the controls are disabled for live links, and the player-bar button fills in the current time.
 
 ## In-app update (1.2.0)
 

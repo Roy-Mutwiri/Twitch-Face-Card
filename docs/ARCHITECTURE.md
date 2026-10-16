@@ -30,6 +30,7 @@
 |---|---|
 | `faceframe/core` | GUI-free: frame contract, queues, geometry, detector, tracking + smoothing, panel validation, temporal fusion, renderer, SR engine, pipeline, metrics |
 | `faceframe/capture` | `direct.py` (Twitch stream), `wgc.py` (window capture), `bridge.py` + `yuv.py` (extension), `audio.py`, `windows.py` |
+| `faceframe/core/autotune.py` | PC probe + benchmark, quality levels, live governor (pure logic, unit-tested) |
 | `faceframe/updater.py` | in-app updates from GitHub Releases (check, download + SHA-256, silent install, relaunch) |
 | `faceframe/ui` | `app.py` control window, `theme.py` design system, `image_view.py`, `output_window.py`, `source_picker.py` |
 | `extension/` | Edge MV3 extension (activeTab, scripting, storage; loopback only) |
